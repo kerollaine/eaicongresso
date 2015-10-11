@@ -1,0 +1,27 @@
+Para o desenvolvimento do portal foi utilizado o serviço de Dados Abertos da Câmara dos Deputados, que contém uma coleção de funcionalidades que permite o acesso direto aos dados produzidos na Câmara dos Deputados.
+
+O conjunto de dados do Legislativo contém dados sobre deputados, órgãos legislativos, proposições, sessões plenárias e reuniões de comissões. Tais informações são disponibilizadas através de webservices ou dados brutos (Opção em desenvolvimento). Os webservices são dividos em:
+
+Deputados: Disponibiliza serviços de acesso aos dados de deputados federais;
+Orgaos: Disponibiliza serviços de acesso aos dados dos órgãos legislativos da Câmara dos Deputados;
+Proposicoes: Disponibiliza serviços de acesso aos dados das proposições que tramitaram ou que estão em tramitação na Câmara dos Deputados;
+SessoesReunioes: Disponibiliza serviços de acesso aos dados das sessões plenárias e das reuniões de comissões realizadas na Câmara dos Deputados.
+
+O principal webservice para este projeto foi o Proposicoes. Os métodos deste webservice retornam detalhes de cada proposição de acordo com os parâmetros informados.
+
+ListarProposicoes: Retorna a lista de proposições que satisfaçam os critérios estabelecidos;
+ListarSiglasTipoProposicao: Retorna a lista de siglas de proposições;
+ListarSituacoesProposicao: Retorna a lista de situações para proposições;
+ListarTiposAutores: Retorna a lista de tipos de autores das proposições;
+ObterProposicao: Retorna os dados de uma determinada proposição a partir do tipo, número e ano;
+ObterProposicaoPorID: Retorna os dados de uma determinada proposição a partir do seu ID;
+ObterVotacaoProposicao: Retorna os votos dos deputados a uma determinada proposição em votações ocorridas no Plenário da Câmara dos Deputados;
+ListarProposicoesVotadasEmPlenario: Retorna todas as proposições votadas em plenário num determinado período;
+ListarProposicoesTramitadasNoPeriodo: Retorna uma lista de proposições movimentadas em determinado período.
+
+Os dados brutos contém subconjuntos de determinado assunto específico, disponibilizados em CSV ou JSON. Contém os tipos de proposição e subconjuntos dos principais tipos de proposição.
+
+Ambos meios de disponibilização permitem acesso o acesso direto aos dados legislativos produzidos, entretanto há variações. Através do webservice Proposicoes é possível encontrar informações de proposições que tramitaram ou estão em tramitação na Câmara dos Deputados, entretanto é necessário enviar parte do nome do autor para a busca das proposições ou outros parâmetros como ano e tipo de proposição. Tal obrigatoriedade permite uma busca limitada e a geração de múltiplas pesquisas para mapear todas as proposições. Os dados brutos contém todas as principais proposições de determinado período, entretanto há mais tipos de proposição apreciados pela Câmara, tais como: emendas, pareceres, indicações, etc. Os tipos de proposição considerados principais, visto que originam as normas descritas no art. 59 da Constituição Federal, são: Propostas de Emenda à Constituição (PEC), Projetos de Lei Complementar (PLP), Projetos de Lei Ordinária (PL), Projetos de Decreto Legislativo (PDC), Projetos de Resolução (PRC) e Medidas Provisórias (MPV). 
+
+Neste contexto, foi necessária uma análise sobre as funcionalidades de cada meio de disponibilização objetivando um resultado de conjunto de dados realístico, transparente e funcional para o portal facilitador de acesso a dados abertos governamentais. Durante a análise, foi constatado que os principais tipos de proposições são insuficientes para resultar em uma análise estatística real de proposições que tramitam na Câmara dos Deputados. Também não foi encontrada uma descrição da proposição ao analisar alguns subconjuntos dos dados brutos. Sendo assim, a utilização dos webservices disponibilizados mostrou-se mais satisfatórias que demais meios.
+

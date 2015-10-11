@@ -1,0 +1,89 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.2 }
+
+\bibitem[AGUNE R. M.; GREGORIO~FILHO 2010]{agunegreg}
+\abntrefinfo{AGUNE R. M.; GREGORIO~FILHO}{AGUNE R. M.; GREGORIO~FILHO}{2010}
+{AGUNE R. M.; GREGORIO~FILHO, A. S. B. S.~P. Governo aberto: disponibiliza{\c
+  c}\~ao de bases de dados e informa{\c c}\~oes em formato aberto.
+2010.}
+
+\bibitem[Ang{\'e}lico 2012]{brasillei}
+\abntrefinfo{Ang{\'e}lico}{ANG{\'E}LICO}{2012}
+{ANG{\'E}LICO, F. Lei de acesso {\`a} informa{\c{c}}{\~a}o p{\'u}ublica e seus
+  poss{\'i}veis desdobramentos {\`a} accountability democr{\'a}tica no brasil.
+2012.}
+
+\bibitem[Arciniegas 2002]{soapbook}
+\abntrefinfo{Arciniegas}{ARCINIEGAS}{2002}
+{ARCINIEGAS, F. \emph{C++ XML}. 1. ed. [S.l.]: Pearson Education do Brasil,
+  2002.}
+
+\bibitem[Berners-Lee 2006]{berners2006linked}
+\abntrefinfo{Berners-Lee}{BERNERS-LEE}{2006}
+{BERNERS-LEE, T. Linked data-design issues.
+2006.}
+
+\bibitem[Bizer, Heath e Berners-Lee 2009]{bizer2009linked}
+\abntrefinfo{Bizer, Heath e Berners-Lee}{BIZER; HEATH; BERNERS-LEE}{2009}
+{BIZER, C.; HEATH, T.; BERNERS-LEE, T. \emph{Linked data-the story so far}.
+  2009.}
+
+\bibitem[Controladoria Geral da Uni\~ao 2014]{CGUGA}
+\abntrefinfo{Controladoria Geral da Uni\~ao}{CONTROLADORIA GERAL DA
+  UNI\~AO}{2014}
+{CONTROLADORIA GERAL DA UNI\~AO. \emph{Informa{\c c}\~oes sobre Parceria para o
+  Governo Aberto}.
+Brasília, 2014. Dispon{\'\i}vel em: \url{governoaberto.cgu.gov.br}.}
+
+\bibitem[Cyganiak Richard;~Jentzsch 2014]{grafo}
+\abntrefinfo{Cyganiak Richard;~Jentzsch}{CYGANIAK RICHARD;~JENTZSCH}{2014}
+{CYGANIAK RICHARD;~JENTZSCH, A. \emph{The Linking Open Data cloud diagram}.
+  2014.
+Dispon{\'\i}vel em: \url{lod-cloud.net}.}
+
+\bibitem[Câmara dos Deputados 2015]{wsproposicoes}
+\abntrefinfo{Câmara dos Deputados}{CâMARA DOS DEPUTADOS}{2015}
+{CâMARA DOS DEPUTADOS. \emph{Proposi{\c c}\~oes}.
+Brasília, 2015. Dispon{\'\i}vel em:
+  \url{http://www2.camara.leg.br/transparencia/dados-abertos/dados-abertos-legislativo/webservices/proposicoes-1/proposicoes}.}
+
+\bibitem[Diniz 2010]{diniz2010conseguir}
+\abntrefinfo{Diniz}{DINIZ}{2010}
+{DINIZ, V. Como conseguir dados governamentais abertos.
+2010.}
+
+\bibitem[Open Government Partnership 2011]{ParceriaGA}
+\abntrefinfo{Open Government Partnership}{OPEN GOVERNMENT PARTNERSHIP}{2011}
+{OPEN GOVERNMENT PARTNERSHIP. \emph{Informa{\c c}\~oes sobre Parceria para o
+  Governo Aberto}.
+Brasília, 2011. Dispon{\'\i}vel em: \url{opengovpartnership.org}.}
+
+\bibitem[OpenGovData 2007]{opengovdata}
+\abntrefinfo{OpenGovData}{OPENGOVDATA}{2007}
+{OPENGOVDATA. \emph{Como conseguir dados governamentais abertos}.
+[S.l.], 2007.}
+
+\bibitem[Pedroso, Tanaka e Cappelli 2013]{pedroso2013lei}
+\abntrefinfo{Pedroso, Tanaka e Cappelli}{PEDROSO; TANAKA; CAPPELLI}{2013}
+{PEDROSO, L.; TANAKA, A.; CAPPELLI, C. A lei de acesso {\`a}
+  informa{\c{c}}{\~a}o brasileira e os desafios tecnol{\'o}gicos dos dados
+  abertos governamentais.
+2013.}
+
+\bibitem[Rymsza 2013]{rymsza2013linked}
+\abntrefinfo{Rymsza}{RYMSZA}{2013}
+{RYMSZA, M.~G. Linked open data como ambiente para a publica{\c{c}}{\~a}o de
+  dados abertos bibliogr{\'a}ficos e da ci{\^e}ncia na web.
+2013.}
+
+\bibitem[Vaz, Ribeiro e Matheus 2011]{vaz2011dados}
+\abntrefinfo{Vaz, Ribeiro e Matheus}{VAZ; RIBEIRO; MATHEUS}{2011}
+{VAZ, J.~C.; RIBEIRO, M.~M.; MATHEUS, R. Dados governamentais abertos e seus
+  impactos sobre os conceitos e pr{\'a}ticas de transpar{\^e}ncia no brasil.
+\emph{Cadernos PPG-AU/UFBA}, v.~9, n.~1, 2011.}
+
+\end{thebibliography}

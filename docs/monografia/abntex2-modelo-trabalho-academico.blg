@@ -1,0 +1,82 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: abntex2-modelo-trabalho-academico.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: abntex2-references-kerollaine.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Too many commas in name 1 of "AGUNE, R. M.; GREGORIO FILHO, A. S.; BOLLIGER, S. P." for entry agunegreg
+while executing---line 2162 of file abntex2-alf.bst
+Too many commas in name 1 of "AGUNE, R. M.; GREGORIO FILHO, A. S.; BOLLIGER, S. P." for entry agunegreg
+while executing---line 2162 of file abntex2-alf.bst
+Too many commas in name 1 of "AGUNE, R. M.; GREGORIO FILHO, A. S.; BOLLIGER, S. P." for entry agunegreg
+while executing---line 2162 of file abntex2-alf.bst
+Too many commas in name 1 of "AGUNE, R. M.; GREGORIO FILHO, A. S.; BOLLIGER, S. P." for entry agunegreg
+while executing---line 2162 of file abntex2-alf.bst
+Too many commas in name 1 of "AGUNE, R. M.; GREGORIO FILHO, A. S.; BOLLIGER, S. P." for entry agunegreg
+while executing---line 2162 of file abntex2-alf.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Too many commas in name 1 of "AGUNE, R. M.; GREGORIO FILHO, A. S.; BOLLIGER, S. P." for entry agunegreg
+while executing---line 2217 of file abntex2-alf.bst
+Too many commas in name 1 of "AGUNE, R. M.; GREGORIO FILHO, A. S.; BOLLIGER, S. P." for entry agunegreg
+while executing---line 2217 of file abntex2-alf.bst
+Too many commas in name 1 of "AGUNE, R. M.; GREGORIO FILHO, A. S.; BOLLIGER, S. P." for entry agunegreg
+while executing---line 2217 of file abntex2-alf.bst
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.2           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex2.googlecode.com                           |
++---------------------------------------------------------+
+You've used 15 entries,
+            6711 wiz_defined-function locations,
+            1257 strings with 11130 characters,
+and the built_in function-call counts, 12499 in all, are:
+= -- 1280
+> -- 275
+< -- 184
++ -- 325
+- -- 85
+* -- 771
+:= -- 1664
+add.period$ -- 47
+call.type$ -- 15
+change.case$ -- 116
+chr.to.int$ -- 21
+cite$ -- 14
+duplicate$ -- 947
+empty$ -- 755
+format.name$ -- 394
+if$ -- 2705
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 236
+newline$ -- 76
+num.names$ -- 55
+pop$ -- 326
+preamble$ -- 1
+purify$ -- 51
+quote$ -- 0
+skip$ -- 1069
+stack$ -- 1
+substring$ -- 486
+swap$ -- 316
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 75
+width$ -- 0
+write$ -- 203
+(There were 8 error messages)

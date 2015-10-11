@@ -1,0 +1,49 @@
+O método ’listarProposicoesTramitadasNoPeriodo’ retorna a  lista de proposições que tramitaram em determinado período. O período máximo é de 7 dias. A \autoref{tabela-tramitadasperiodo} apresenta os parâmetros recebidos pelo método, assim
+como seu valor e descrição do campo.
+
+\begin{table}[htb]
+\IBGEtab{%
+  \caption{Parâmetros do método 'listarProposicoesTramitadasNoPeriodo'}%
+  \label{tabela-tramitadasperiodo}
+}{%
+  \begin{tabular}{p{4cm}p{4.0cm}p{7.25cm}}
+  \toprule
+   Nome & Valor & Descrição \\
+  \midrule \midrule
+   dtInicio & String (Obrigatorio) & Data de início \\
+  \midrule
+   dtFim & String (Obrigatorio) & Data final \\
+  \bottomrule
+\end{tabular}%
+}{%
+  \fonte{\citeonline{wsproposicoes}}%
+  
+  }
+\end{table}
+
+A \autoref{tabela-returntramitadasperiodo} apresenta os itens da lista contendo todas as proposições que satisfazem os critérios estabelecidos.
+
+\begin{table}[htb]
+\IBGEtab{%
+  \caption{Retorno do método 'listarProposicoesTramitadasNoPeriodo'}%
+  \label{tabela-returntramitadasperiodo}
+}{%
+  \begin{tabular}{p{4cm}p{4.0cm}p{7.25cm}}
+  \toprule
+   Nome & Valor & Descrição \\
+  \midrule \midrule
+   codProposicao & String & Código da proposição \\
+  \midrule
+   tipoProposicao & Sring & Tipo da proposição \\
+  \midrule
+   Numero & Sring & Número da proposição \\
+  \midrule
+   Ano & Sring & Ano da proposição \\
+  \bottomrule
+\end{tabular}%
+}{%
+  \fonte{\citeonline{wsproposicoes}}%
+  
+  }
+\end{table}
+

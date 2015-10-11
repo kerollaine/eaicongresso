@@ -1,0 +1,24 @@
+
+
+\begin{table}[htb]
+\tabela-listarproposicoes{%
+  \caption{Um Exemplo de tabela alinhada que pode ser longa
+  ou curta, conforme padrão IBGE.}%
+  \label{tabela-listarproposicoes}
+}{%
+  \begin{tabular}{ccc}
+  \toprule
+   Nome & Valor & Descrição \\
+  \midrule \midrule
+   Sigla & String(Obrigatorio se ParteNomeAutor não for preenchido) & Sigla do tipo de proposição \\
+  \midrule 
+   Numero & Int(Opcional) & Numero da proposição \\
+  \midrule 
+  Ano &  	Int(Obrigatorio se ParteNomeAutor não for preenchido) & Ano da proposição \\
+  \bottomrule
+\end{tabular}%
+}{%
+  \fonte{\citeonline{wsproposicoes}}%
+  
+  }
+\end{table}
