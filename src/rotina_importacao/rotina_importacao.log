@@ -1,0 +1,29 @@
+Mon, 12 Oct 2015 22:34:46 INFO     Rotina de importação iniciada.
+Mon, 12 Oct 2015 22:34:46 INFO     Conexão com o banco de dados estabelecida.
+Mon, 12 Oct 2015 22:34:46 ERROR    Ocorreu um erro.
+Traceback (most recent call last):
+  File "/mnt/dados/repositorios/eaicongresso/src/rotina_importacao/main.py", line 25, in <module>
+    ImportarSituacao.executa(c)
+TypeError: unbound method executa() must be called with ImportarSituacao instance as first argument (got cursor instance instead)
+Mon, 12 Oct 2015 22:36:01 INFO     Rotina de importação iniciada.
+Mon, 12 Oct 2015 22:36:01 INFO     Conexão com o banco de dados estabelecida.
+Mon, 12 Oct 2015 22:36:01 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Mon, 12 Oct 2015 22:36:17 DEBUG    Setting read timeout to None
+Mon, 12 Oct 2015 22:36:17 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSituacoesProposicao HTTP/1.1" 200 None
+Mon, 12 Oct 2015 22:36:17 INFO     Requisição para o WS de listar situações efetuada.
+Mon, 12 Oct 2015 22:36:17 INFO     Iniciando rotina de sincronização do ListarSituacoesProposicao com a aplicação.
+Mon, 12 Oct 2015 22:36:17 INFO     Rotina de importação finalizada.
+Mon, 12 Oct 2015 22:36:50 INFO     Rotina de importação iniciada.
+Mon, 12 Oct 2015 22:36:50 INFO     Conexão com o banco de dados estabelecida.
+Mon, 12 Oct 2015 22:36:50 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Mon, 12 Oct 2015 22:37:05 DEBUG    Setting read timeout to None
+Mon, 12 Oct 2015 22:37:05 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSituacoesProposicao HTTP/1.1" 200 None
+Mon, 12 Oct 2015 22:37:05 INFO     Requisição para o WS de listar situações efetuada.
+Mon, 12 Oct 2015 22:37:05 INFO     Iniciando rotina de sincronização do ListarSituacoesProposicao com a aplicação.
+Mon, 12 Oct 2015 22:37:05 INFO     Inserção realizada, id: 900
+Mon, 12 Oct 2015 22:37:05 INFO     Inserção realizada, id: 901
+Mon, 12 Oct 2015 22:37:05 INFO     Inserção realizada, id: 902
+Mon, 12 Oct 2015 22:37:05 INFO     Inserção realizada, id: 903
+Mon, 12 Oct 2015 22:37:05 INFO     Inserção realizada, id: 904
+Mon, 12 Oct 2015 22:37:05 INFO     Inserção realizada, id: 905
+Mon, 12 Oct 2015 22:37:05 INFO     Rotina de importação finalizada.
