@@ -27,3 +27,1187 @@ Mon, 12 Oct 2015 22:37:05 INFO     Inserção realizada, id: 903
 Mon, 12 Oct 2015 22:37:05 INFO     Inserção realizada, id: 904
 Mon, 12 Oct 2015 22:37:05 INFO     Inserção realizada, id: 905
 Mon, 12 Oct 2015 22:37:05 INFO     Rotina de importação finalizada.
+Fri, 16 Oct 2015 15:16:32 INFO     Rotina de importação iniciada.
+Fri, 16 Oct 2015 15:16:32 INFO     Conexão com o banco de dados estabelecida.
+Fri, 16 Oct 2015 15:16:32 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Fri, 16 Oct 2015 15:16:48 DEBUG    Setting read timeout to None
+Fri, 16 Oct 2015 15:16:48 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSituacoesProposicao HTTP/1.1" 200 None
+Fri, 16 Oct 2015 15:16:48 INFO     Requisição para o WS de listar situações efetuada.
+Fri, 16 Oct 2015 15:16:49 INFO     Iniciando rotina de sincronização do ListarSituacoesProposicao com a aplicação.
+Fri, 16 Oct 2015 15:16:49 INFO     Rotina de importação finalizada.
+Sun, 18 Oct 2015 17:18:51 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 17:18:51 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 17:18:51 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 17:19:06 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 17:19:06 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSituacoesProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 17:19:06 INFO     Requisição para o WS de listar situações efetuada.
+Sun, 18 Oct 2015 17:19:06 INFO     Iniciando rotina de sincronização do ListarSituacoesProposicao com a aplicação.
+Sun, 18 Oct 2015 17:19:06 INFO     Rotina de importação finalizada.
+Sun, 18 Oct 2015 17:20:42 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 17:20:42 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 17:20:43 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 17:21:00 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 17:21:02 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSituacoesProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 17:21:02 INFO     Requisição para o WS de listar situações efetuada.
+Sun, 18 Oct 2015 17:21:02 INFO     Iniciando rotina de sincronização do ListarSituacoesProposicao com a aplicação.
+Sun, 18 Oct 2015 17:21:02 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 17:21:08 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 17:21:09 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 17:21:09 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 17:21:09 INFO     Iniciando rotina de sincronização do ListarSiglasTipoProposicao com a aplicação.
+Sun, 18 Oct 2015 17:21:09 WARNING  A rotina será executada para esta tabela pela primeira vez.
+Sun, 18 Oct 2015 17:21:09 ERROR    Ocorreu um erro.
+Traceback (most recent call last):
+  File "/mnt/dados/repositorios/eaicongresso/src/rotina_importacao/main.py", line 27, in <module>
+    ImportarTipoProposicao.executa(c)
+  File "/mnt/dados/repositorios/eaicongresso/src/rotina_importacao/subrotinas/importar_tipo_proposicao.py", line 35, in executa
+    if int(id) not in tiposSigla:
+ValueError: invalid literal for int() with base 10: 'AA        '
+Sun, 18 Oct 2015 17:31:00 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 17:31:00 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 17:31:00 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 17:31:15 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 17:31:15 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 17:31:15 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 17:31:15 INFO     Rotina de importação finalizada.
+Sun, 18 Oct 2015 17:33:25 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 17:33:25 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 17:33:25 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 17:33:40 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 17:33:40 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 17:33:40 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 17:33:40 INFO     Rotina de importação finalizada.
+Sun, 18 Oct 2015 17:39:48 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 17:39:48 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 17:39:48 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 17:40:04 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 17:40:04 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 17:40:04 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 17:40:04 ERROR    Ocorreu um erro.
+Traceback (most recent call last):
+  File "/mnt/dados/repositorios/eaicongresso/src/rotina_importacao/main.py", line 27, in <module>
+    ContadorProposicao.executa(c)
+  File "/mnt/dados/repositorios/eaicongresso/src/rotina_importacao/subrotinas/contador_proposicao.py", line 24, in executa
+    for siglaProposicao in root.findall('sigla').split():
+AttributeError: 'list' object has no attribute 'split'
+Sun, 18 Oct 2015 17:42:04 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 17:42:04 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 17:42:04 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 17:42:19 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 17:42:19 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 17:42:19 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 17:42:19 ERROR    Ocorreu um erro.
+Traceback (most recent call last):
+  File "/mnt/dados/repositorios/eaicongresso/src/rotina_importacao/main.py", line 27, in <module>
+    ContadorProposicao.executa(c)
+  File "/mnt/dados/repositorios/eaicongresso/src/rotina_importacao/subrotinas/contador_proposicao.py", line 24, in executa
+    for siglaProposicao in root.findall('sigla').rstrip():
+AttributeError: 'list' object has no attribute 'rstrip'
+Sun, 18 Oct 2015 17:43:29 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 17:43:29 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 17:43:29 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 17:43:44 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 17:43:44 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 17:43:44 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 17:43:44 INFO     Rotina de importação finalizada.
+Sun, 18 Oct 2015 18:13:17 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 18:13:17 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 18:13:17 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:13:32 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:13:32 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:13:32 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 18:13:32 INFO     Criado conjunto de siglas de de tipo de proposição
+Sun, 18 Oct 2015 18:13:32 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:13:37 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:13:39 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?sigla=PEC&numero=&ano=2015&datApresentacaoIni=&datApresentacaoFim=&idTipoAutor=&parteNomeAutor=&siglaPartidoAutor=&siglaUFAutor=&generoAutor=&codEstado=&codOrgaoEstado=&emTramitacao= HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:13:40 INFO     Requisição para o WS de listar proposições efetuada.
+Sun, 18 Oct 2015 18:13:40 INFO     Rotina de importação finalizada.
+Sun, 18 Oct 2015 18:21:14 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 18:21:14 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 18:21:14 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:21:30 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:21:30 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:21:31 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 18:21:31 INFO     Criado conjunto de siglas de de tipo de proposição
+Sun, 18 Oct 2015 18:36:45 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 18:36:45 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 18:36:45 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:37:00 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:37:00 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:37:00 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 18:37:00 INFO     Criado conjunto de siglas de de tipo de proposição
+Sun, 18 Oct 2015 18:37:00 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:37:06 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:37:06 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=siglas HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:37:06 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:37:11 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:37:11 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=siglas HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:37:11 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:37:16 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:37:16 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=siglas HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:37:16 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:37:21 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:37:22 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=siglas HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:37:22 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:37:27 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:37:27 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=siglas HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:37:27 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:37:32 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:37:32 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=siglas HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:37:32 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:37:37 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:37:37 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=siglas HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:37:37 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:37:42 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:37:43 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=siglas HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:37:43 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:37:48 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:37:48 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=siglas HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:37:48 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:37:53 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:37:53 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=siglas HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:37:53 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:38:56 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 18:38:56 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 18:38:56 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:39:12 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:39:12 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:39:12 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 18:39:12 INFO     Criado conjunto de siglas de de tipo de proposição
+Sun, 18 Oct 2015 18:39:12 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:39:17 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:39:17 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PARF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:39:17 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:39:22 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:39:22 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PAR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:39:22 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:43:03 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 18:43:03 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 18:43:03 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:43:20 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:43:22 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:43:22 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 18:43:22 INFO     Criado conjunto de siglas de de tipo de proposição
+Sun, 18 Oct 2015 18:43:22 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:43:27 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:43:27 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PARF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:50:25 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 18:50:26 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 18:50:26 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:50:41 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:50:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:50:41 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 18:50:41 ERROR    Ocorreu um erro.
+Traceback (most recent call last):
+  File "/mnt/dados/repositorios/eaicongresso/src/rotina_importacao/main.py", line 27, in <module>
+    ContadorProposicao.executa(c)
+  File "/mnt/dados/repositorios/eaicongresso/src/rotina_importacao/subrotinas/contador_proposicao.py", line 25, in executa
+    print root.findall('sigla').length
+AttributeError: 'list' object has no attribute 'length'
+Sun, 18 Oct 2015 18:52:49 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 18:52:49 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 18:52:50 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:53:05 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:53:05 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:53:05 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 18:55:28 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 18:55:28 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 18:55:28 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:55:43 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:55:43 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:55:44 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 18:55:44 INFO     Criado conjunto de siglas de de tipo de proposição
+Sun, 18 Oct 2015 18:55:44 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:55:49 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:55:49 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PARF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:55:49 ERROR    Falha ao tentar conectar no WS.
+Traceback (most recent call last):
+  File "/mnt/dados/repositorios/eaicongresso/src/rotina_importacao/subrotinas/contador_proposicao.py", line 38, in executa
+    print("Subtotal: "+total)
+TypeError: cannot concatenate 'str' and 'int' objects
+Sun, 18 Oct 2015 18:56:26 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 18:56:26 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 18:56:26 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:56:41 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:56:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:56:41 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 18:56:41 INFO     Criado conjunto de siglas de de tipo de proposição
+Sun, 18 Oct 2015 18:56:41 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:56:46 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:56:46 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PARF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:56:46 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:56:51 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:56:52 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PAR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:56:52 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:56:57 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:56:58 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SIT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:56:58 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:57:03 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:57:03 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SBT-A HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:57:03 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:57:08 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:57:08 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EPP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:57:08 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:57:13 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:57:14 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CCN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:57:14 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:57:19 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:57:19 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EXP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:57:19 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:57:24 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:57:25 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PR%2FCNJ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:57:25 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:57:30 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:57:30 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RPA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:57:31 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:57:36 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:57:36 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:57:36 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:57:41 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:57:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:57:41 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:57:46 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:57:46 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PIN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:57:46 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:57:52 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:57:52 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SPP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:57:52 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:57:57 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:57:57 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:57:57 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:58:02 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:58:02 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRO HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:58:02 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:58:07 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:58:08 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:58:08 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:58:13 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:58:13 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OF. HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:58:13 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:58:18 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:58:18 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RIN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:58:18 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:58:23 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:58:24 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:58:24 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:58:29 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:58:29 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RAT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:58:29 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:58:34 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:58:34 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:58:34 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:58:39 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:58:39 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:58:39 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:58:44 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:58:45 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:58:45 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:58:50 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:58:50 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SPA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:58:50 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:58:55 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:58:55 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SAP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:58:55 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:59:00 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:59:00 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DCR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:59:00 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:59:05 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:59:09 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RIC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:59:14 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:59:19 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:59:19 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=IAN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:59:19 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:59:24 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:59:24 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OFE HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:59:24 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:59:29 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:59:29 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OFJ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:59:30 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:59:35 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:59:35 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PR%2FCNMP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:59:35 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:59:40 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:59:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OFN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:59:41 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:59:46 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:59:46 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OFS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:59:46 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:59:51 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:59:52 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OFT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:59:52 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 18:59:57 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 18:59:57 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=P.C HTTP/1.1" 200 None
+Sun, 18 Oct 2015 18:59:57 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:00:02 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:00:02 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RPLOA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:00:02 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:00:07 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:00:07 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RQP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:00:07 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:00:13 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:00:13 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=NIC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:00:13 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:00:18 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:00:18 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=APJ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:00:18 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:00:23 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:00:23 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RQC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:00:23 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:00:28 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:00:29 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:00:29 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:00:34 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:00:34 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RQN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:00:34 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:00:39 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:00:40 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=REC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:00:40 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:00:45 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:00:45 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MAN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:00:45 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:00:51 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:00:51 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMD HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:00:51 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:00:56 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:00:56 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:00:57 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:01:02 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:01:07 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:01:16 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:01:21 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:01:22 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EML HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:01:22 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:01:27 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:01:27 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMO HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:01:27 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:01:32 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:01:34 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:01:38 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:01:43 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:01:43 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DEN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:01:43 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:01:48 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:01:48 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:01:48 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:01:53 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:01:53 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DTQ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:01:53 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:01:58 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:01:59 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DEC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:01:59 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:02:04 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:02:04 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CRVITAEDOC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:02:04 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:02:09 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:02:09 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RCM HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:02:09 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:02:14 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:02:14 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RTV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:02:14 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:02:20 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:02:20 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=NINF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:02:20 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:02:25 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:02:25 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ERD-A HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:02:25 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:02:30 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:02:32 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PEC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:02:32 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:02:37 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:02:46 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:02:59 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:03:04 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:03:04 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RFP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:03:04 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:03:09 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:03:10 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRVP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:03:10 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:03:15 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:03:15 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RQA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:03:15 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:03:20 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:03:20 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RLP%28V%29 HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:03:20 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:03:25 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:03:25 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SBE-A HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:03:25 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:03:30 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:03:31 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CST HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:03:31 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:03:36 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:03:37 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:03:37 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:03:43 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:03:43 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMRP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:03:43 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:03:48 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:03:48 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SSP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:03:48 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:03:53 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:03:54 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MPV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:03:54 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:03:59 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:04:00 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=AVN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:04:00 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:04:05 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:04:05 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PSS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:04:05 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:04:10 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:04:11 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RPLE HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:04:11 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:04:16 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:04:16 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=INA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:04:16 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:04:21 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:04:24 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=INC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:04:30 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:04:36 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:04:37 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SUG HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:04:37 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:04:42 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:04:42 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SUC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:04:42 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:04:47 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:04:47 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ATC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:04:47 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:04:53 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:04:53 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ATA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:04:53 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:04:58 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:04:58 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PET HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:04:58 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:05:03 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:05:03 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DOC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:05:03 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:05:09 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:05:09 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=REP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:05:09 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:05:14 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:05:32 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=REQ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:06:06 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:06:12 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:06:12 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PEP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:06:12 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:06:17 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:06:17 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PES HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:06:17 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:06:22 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:06:22 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMPV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:06:22 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:06:27 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:06:28 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SPP-R HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:06:28 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:06:33 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:06:34 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=REL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:06:34 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:06:39 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:06:39 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=REM HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:06:39 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:06:44 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:06:44 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=COI HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:06:44 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:06:49 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:06:50 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DVT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:06:50 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:06:55 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:06:57 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DOCCPI HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:07:00 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:07:05 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:07:05 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PEA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:07:05 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:07:10 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:07:11 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CON HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:07:11 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:07:16 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:07:16 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RRL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:07:16 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:07:21 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:07:22 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RRC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:07:22 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:07:27 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:07:28 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=TVR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:07:28 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:07:33 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:07:33 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=TER HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:07:33 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:07:38 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:07:38 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=VTS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:07:38 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:07:44 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:07:44 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RDV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:07:44 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:07:49 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:07:49 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OBJ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:07:49 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:07:54 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:07:54 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=R.C HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:07:54 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:07:59 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:08:00 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RCP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:08:01 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:08:06 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:08:06 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PDS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:08:06 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:08:11 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:08:11 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SRL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:08:11 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:08:16 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:08:17 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PDN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:08:17 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:08:22 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:08:22 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ADD HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:08:22 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:08:27 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:08:27 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RDF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:08:27 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:08:32 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:08:33 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PDC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:08:34 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:08:39 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:08:39 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PDA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:08:39 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:08:44 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:08:45 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SBR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:08:45 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:08:50 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:08:51 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PLV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:08:51 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:08:56 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:08:56 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMC-A HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:08:56 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:09:01 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:09:01 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PLS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:09:01 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:09:06 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:09:07 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SBT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:09:07 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:09:12 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:09:13 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PLP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:09:14 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:09:19 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:09:19 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SUM HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:09:19 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:09:24 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:09:24 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RLF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:09:24 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:09:29 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:09:30 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MMP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:09:30 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:09:35 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:09:35 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PLC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:09:35 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:09:40 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:09:40 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SBE HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:09:40 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:09:45 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:09:45 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PLN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:09:46 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:09:51 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:09:51 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RLP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:09:51 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:09:56 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:09:56 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:09:56 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:10:01 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:10:01 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ERR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:10:01 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:10:06 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:10:07 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MST HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:10:07 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:10:12 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:10:12 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CVR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:10:12 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:10:17 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:10:17 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRST HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:10:17 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:10:22 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:10:23 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ERD HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:10:23 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:10:29 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:10:29 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CVO HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:10:29 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:10:34 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:10:34 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SRAP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:10:34 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:10:39 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:10:40 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CAC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:10:40 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:10:45 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:10:46 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MSF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:10:46 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:10:51 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:10:52 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MSC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:10:52 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:10:58 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:10:58 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CAE HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:10:58 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:11:03 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:11:11 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DIS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:11:25 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:11:31 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:11:31 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SOA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:11:31 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:11:36 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:11:36 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PCA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:11:36 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:11:41 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:11:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EAG HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:11:41 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:11:47 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:11:47 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ANEXO HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:11:47 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:11:52 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:11:52 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PPR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:11:52 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:11:57 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:11:57 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PPP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:11:57 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:12:03 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:12:03 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SGM HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:12:03 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:12:08 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:12:08 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SPA-R HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:12:08 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:12:13 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:12:13 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RPL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:12:13 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:12:18 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:12:19 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=AA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:12:19 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:12:24 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:12:24 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=STF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:12:24 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:12:29 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:12:29 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RLP%28R%29 HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:12:29 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:12:34 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:12:35 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ESP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:12:35 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:12:40 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:12:40 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ATOP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:12:40 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:12:45 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:12:45 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SDL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:12:45 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:12:50 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:12:50 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MSG HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:12:50 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:12:56 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:12:56 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RPR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:12:56 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:13:01 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:13:01 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ESB HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:13:01 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:13:06 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:13:06 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=AV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:13:06 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:13:11 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:13:13 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SLD HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:13:13 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:13:18 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:13:18 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MTC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:13:18 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:13:23 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:13:24 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MCN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:13:24 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:13:29 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:13:29 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PFC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:13:29 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:13:34 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:13:36 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SOR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:13:36 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:13:41 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:13:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2015&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RST HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:16:32 INFO     Rotina de importação iniciada.
+Sun, 18 Oct 2015 19:16:32 INFO     Conexão com o banco de dados estabelecida.
+Sun, 18 Oct 2015 19:16:32 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:16:47 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:16:47 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarSiglasTipoProposicao HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:16:47 INFO     Requisição para o WS de listar tipos de proposições efetuada.
+Sun, 18 Oct 2015 19:16:47 INFO     Criado conjunto de siglas de de tipo de proposição
+Sun, 18 Oct 2015 19:16:47 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:16:52 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:16:52 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PARF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:16:52 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:16:57 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:16:57 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PAR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:16:57 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:17:03 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:17:03 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SIT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:17:03 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:17:08 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:17:08 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SBT-A HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:17:08 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:17:14 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:17:14 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EPP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:17:14 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:17:19 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:17:19 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CCN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:17:19 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:17:24 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:17:25 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EXP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:17:25 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:17:30 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:17:30 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PR%2FCNJ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:17:30 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:17:35 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:17:36 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RPA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:17:36 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:17:41 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:17:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:17:41 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:17:46 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:17:46 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:17:46 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:17:51 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:17:52 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PIN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:17:52 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:17:57 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:17:57 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SPP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:17:57 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:18:02 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:18:03 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:18:03 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:18:08 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:18:09 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRO HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:18:09 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:18:14 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:18:14 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:18:14 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:18:19 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:18:20 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OF. HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:18:20 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:18:25 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:18:25 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RIN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:18:25 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:18:30 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:18:31 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:18:31 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:18:36 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:18:36 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RAT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:18:36 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:18:41 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:18:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:18:41 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:18:46 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:18:47 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:18:47 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:18:52 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:18:52 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:18:52 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:18:57 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:18:57 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SPA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:18:57 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:19:02 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:19:02 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SAP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:19:02 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:19:07 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:19:08 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DCR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:19:08 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:19:13 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:19:15 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RIC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:19:18 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:19:23 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:19:23 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=IAN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:19:23 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:19:28 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:19:28 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OFE HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:19:28 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:19:33 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:19:33 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OFJ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:19:33 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:19:38 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:19:39 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PR%2FCNMP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:19:39 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:19:44 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:19:45 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OFN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:19:45 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:19:50 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:19:50 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OFS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:19:50 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:19:55 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:19:56 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OFT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:19:56 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:20:01 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:20:01 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=P.C HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:20:01 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:20:06 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:20:06 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RPLOA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:20:06 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:20:11 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:20:11 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RQP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:20:11 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:20:17 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:20:17 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=NIC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:20:17 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:20:22 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:20:22 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=APJ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:20:22 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:20:27 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:20:27 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RQC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:20:27 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:20:33 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:20:33 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:20:33 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:20:38 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:20:38 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RQN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:20:38 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:20:43 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:20:45 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=REC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:20:46 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:20:51 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:20:51 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MAN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:20:51 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:20:56 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:20:57 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMD HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:20:57 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:21:02 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:21:02 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:21:02 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:21:07 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:21:11 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:21:20 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:21:25 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:21:25 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EML HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:21:25 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:21:30 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:21:30 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMO HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:21:31 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:21:36 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:21:37 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:21:38 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:21:43 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:21:44 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DEN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:21:44 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:21:49 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:21:49 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:21:49 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:21:54 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:21:54 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DTQ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:21:54 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:21:59 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:21:59 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DEC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:21:59 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:22:04 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:22:05 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CRVITAEDOC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:22:05 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:22:10 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:22:10 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RCM HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:22:10 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:22:15 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:22:15 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RTV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:22:15 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:22:20 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:22:20 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=NINF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:22:20 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:22:25 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:22:26 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ERD-A HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:22:26 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:22:31 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:22:32 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PEC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:22:32 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:22:37 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:22:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:22:46 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:22:51 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:22:51 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RFP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:22:51 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:22:57 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:22:57 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRVP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:22:57 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:23:02 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:23:02 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RQA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:23:02 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:23:07 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:23:07 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RLP%28V%29 HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:23:07 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:23:12 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:23:12 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SBE-A HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:23:13 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:23:18 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:23:18 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CST HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:23:18 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:23:23 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:23:24 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:23:24 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:23:29 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:23:29 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMRP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:23:29 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:23:34 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:23:35 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SSP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:23:35 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:23:40 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:23:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MPV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:23:41 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:23:46 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:23:47 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=AVN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:23:47 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:23:53 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:23:53 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PSS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:23:53 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:23:58 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:23:59 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RPLE HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:23:59 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:24:04 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:24:04 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=INA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:24:04 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:24:09 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:24:11 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=INC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:24:17 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:24:22 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:24:23 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SUG HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:24:23 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:24:28 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:24:28 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SUC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:24:28 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:24:34 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:24:34 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ATC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:24:34 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:24:39 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:24:39 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ATA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:24:39 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:24:44 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:24:44 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PET HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:24:44 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:24:49 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:24:49 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DOC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:24:49 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:24:55 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:24:55 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=REP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:24:55 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:25:00 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:25:07 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=REQ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:25:19 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:25:24 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:25:24 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PEP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:25:24 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:25:29 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:25:29 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PES HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:25:29 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:25:34 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:25:35 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMPV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:25:35 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:25:40 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:25:40 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SPP-R HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:25:40 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:25:45 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:25:46 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=REL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:25:46 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:25:51 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:25:52 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=REM HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:25:52 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:25:57 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:25:57 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=COI HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:25:57 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:26:02 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:26:02 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DVT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:26:02 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:26:07 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:26:08 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DOCCPI HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:26:08 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:26:13 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:26:13 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PEA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:26:13 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:26:18 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:26:18 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CON HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:26:19 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:26:24 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:26:24 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RRL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:26:24 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:26:29 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:26:29 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RRC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:26:29 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:26:34 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:26:35 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=TVR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:26:35 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:26:40 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:26:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=TER HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:26:41 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:26:46 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:26:46 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=VTS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:26:46 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:26:51 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:26:51 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RDV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:26:51 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:26:56 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:26:57 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=OBJ HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:26:57 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:27:02 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:27:02 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=R.C HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:27:02 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:27:07 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:27:07 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RCP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:27:07 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:27:12 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:27:13 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PDS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:27:13 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:27:18 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:27:18 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SRL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:27:18 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:27:23 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:27:23 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PDN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:27:23 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:27:28 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:27:28 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ADD HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:27:28 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:27:33 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:27:34 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RDF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:27:34 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:27:39 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:27:40 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PDC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:27:41 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:27:46 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:27:46 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PDA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:27:46 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:27:52 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:27:52 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SBR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:27:52 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:27:57 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:27:58 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PLV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:27:58 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:28:03 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:28:03 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMC-A HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:28:04 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:28:09 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:28:09 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PLS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:28:09 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:28:14 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:28:14 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SBT HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:28:14 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:28:19 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:28:20 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PLP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:28:21 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:28:26 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:28:26 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SUM HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:28:26 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:28:31 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:28:31 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RLF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:28:31 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:28:36 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:28:37 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MMP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:28:37 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:28:42 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:28:42 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PLC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:28:42 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:28:47 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:28:47 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SBE HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:28:47 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:28:52 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:28:53 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PLN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:28:54 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:28:59 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:28:59 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RLP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:28:59 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:29:04 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:29:04 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EMS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:29:04 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:29:09 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:29:09 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ERR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:29:10 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:29:15 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:29:15 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MST HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:29:15 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:29:20 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:29:20 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CVR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:29:20 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:29:25 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:29:25 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PRST HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:29:25 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:29:30 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:29:31 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ERD HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:29:31 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:29:36 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:29:36 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CVO HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:29:36 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:29:41 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:29:41 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SRAP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:29:41 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:29:46 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:29:46 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CAC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:29:47 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:29:52 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:29:52 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MSF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:29:52 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:29:57 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:30:00 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MSC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:30:00 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:30:06 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:30:06 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=CAE HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:30:06 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:30:11 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:30:19 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=DIS HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:30:32 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:30:37 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:30:37 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SOA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:30:37 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:30:42 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:30:42 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PCA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:30:42 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:30:47 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:30:48 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=EAG HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:30:48 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:30:53 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:30:53 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ANEXO HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:30:53 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:30:58 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:30:58 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PPR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:30:58 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:31:03 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:31:03 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PPP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:31:03 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:31:08 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:31:09 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SGM HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:31:09 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:31:14 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:31:14 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SPA-R HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:31:14 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:31:19 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:31:19 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RPL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:31:19 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:31:24 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:31:24 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=AA HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:31:24 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:31:29 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:31:30 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=STF HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:31:30 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:31:35 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:31:35 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RLP%28R%29 HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:31:35 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:31:40 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:31:40 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ESP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:31:40 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:31:45 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:31:45 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ATOP HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:31:45 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:31:50 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:31:51 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SDL HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:31:51 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:31:56 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:31:56 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MSG HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:31:56 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:32:01 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:32:01 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RPR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:32:01 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:32:06 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:32:06 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=ESB HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:32:06 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:32:12 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:32:12 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=AV HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:32:12 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:32:17 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:32:18 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SLD HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:32:19 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:32:24 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:32:24 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MTC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:32:24 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:32:29 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:32:30 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=MCN HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:32:30 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:32:36 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:32:37 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=PFC HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:32:37 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:32:42 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:32:43 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=SOR HTTP/1.1" 200 None
+Sun, 18 Oct 2015 19:32:43 INFO     Starting new HTTP connection (1): www.camara.gov.br
+Sun, 18 Oct 2015 19:32:48 DEBUG    Setting read timeout to None
+Sun, 18 Oct 2015 19:32:49 DEBUG    "GET /SitCamaraWS/Proposicoes.asmx/ListarProposicoes?generoAutor=&siglaUFAutor=&ano=2014&numero=&codOrgaoEstado=&emTramitacao=&datApresentacaoIni=&idTipoAutor=&siglaPartidoAutor=&codEstado=&datApresentacaoFim=&parteNomeAutor=&sigla=RST HTTP/1.1" 200 None

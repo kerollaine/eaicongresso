@@ -32,8 +32,3 @@ class ImportarTipoProposicao(object):
             ativa = tiposProposicao.get('ativa')
             genero = tiposProposicao.get('genero')
 
-            if int(id) not in tiposSigla:
-                logging.debug('Inserção realizada, id: ' +id)
-                sql = 'INSERT INTO situacao (id, descricao, ativa) VALUES (%(id)s, %(descricao)s, %(ativa)s, %(genero)s)'
-                param = {'id': int(id), 'descricao': descricao, 'ativa': ativa, 'genero': genero}
-                c.execute(sql, param)

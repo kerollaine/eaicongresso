@@ -4,6 +4,7 @@ __author__ = 'kerollaine'
 import psycopg2
 import logging
 from subrotinas.importar_situacao import ImportarSituacao
+from subrotinas.contador_proposicao import ContadorProposicao
 
 try:
     logging.basicConfig(level=logging.DEBUG,
@@ -22,7 +23,8 @@ try:
         logging.exception('Erro ao tentar conectar com o banco de dados.')
         quit()
 
-    ImportarSituacao.executa(c)
+#    ImportarSituacao.executa(c)
+    ContadorProposicao.executa(c)
 
     con.commit()
     logging.info('Rotina de importação finalizada.')
