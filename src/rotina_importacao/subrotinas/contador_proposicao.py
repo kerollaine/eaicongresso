@@ -31,7 +31,7 @@ class ContadorProposicao(object):
             total = 0
             #Faz a requisicao para o ListarProposicoes
             for sigla in siglas:
-                payload = {'sigla': sigla, 'numero': '', 'ano': '2014', 'datApresentacaoIni': '', 'datApresentacaoFim': '', 'idTipoAutor': '', 'parteNomeAutor': '', 'siglaPartidoAutor': '', 'siglaUFAutor': '', 'generoAutor': '', 'codEstado': '', 'codOrgaoEstado' : '', 'emTramitacao': ''}
+                payload = {'sigla': sigla, 'numero': '', 'ano': '2015', 'datApresentacaoIni': '', 'datApresentacaoFim': '', 'idTipoAutor': '', 'parteNomeAutor': '', 'siglaPartidoAutor': '', 'siglaUFAutor': '', 'generoAutor': '', 'codEstado': '', 'codOrgaoEstado' : '', 'emTramitacao': ''}
                 r = requests.get("http://www.camara.gov.br/SitCamaraWS/Proposicoes.asmx/ListarProposicoes", params = payload)
                 root = ET.fromstring(r.content)
                 total += len(root.findall('proposicao'))

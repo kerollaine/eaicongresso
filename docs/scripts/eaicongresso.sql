@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS tipo_proposicao;
 CREATE TABLE IF NOT EXISTS tipo_proposicao (
-  id INT NOT NULL,
+  id serial NOT NULL,
   sigla VARCHAR(45) NULL,
   descricao VARCHAR(45) NULL,
   ativa BOOL NULL,
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS tipo_proposicao (
 
 DROP TABLE IF EXISTS orgao_numerador;
 CREATE TABLE IF NOT EXISTS orgao_numerador (
-  id INT NOT NULL,
+  id serial NOT NULL,
   sigla VARCHAR(45) NULL,
   nome VARCHAR(45) NULL,
   PRIMARY KEY (id)
@@ -18,35 +18,35 @@ CREATE TABLE IF NOT EXISTS orgao_numerador (
 
 DROP TABLE IF EXISTS regime;
 CREATE TABLE IF NOT EXISTS regime (
-  id INT NOT NULL,
+  id serial NOT NULL,
   descricao VARCHAR(45) NULL,
   PRIMARY KEY (id)
 );
 
 DROP TABLE IF EXISTS apreciacao;
 CREATE TABLE IF NOT EXISTS apreciacao (
-  id INT NOT NULL,
+  id serial NOT NULL,
   descricao VARCHAR(45) NULL,
   PRIMARY KEY (id)
 );
 
 DROP TABLE IF EXISTS partido;
 CREATE TABLE IF NOT EXISTS partido (
-  id INT NOT NULL,
+  id serial NOT NULL,
   sigla VARCHAR(45) NULL,
   PRIMARY KEY (id)
 );
 
 DROP TABLE IF EXISTS tipo_autor ;
 CREATE TABLE IF NOT EXISTS tipo_autor (
-  id INT NOT NULL,
+  id serial NOT NULL,
   descricao VARCHAR(45) NULL,
   PRIMARY KEY (id)
 );
 
 DROP TABLE IF EXISTS autor;
 CREATE TABLE IF NOT EXISTS autor (
-  id INT NOT NULL,
+  id serial NOT NULL,
   nome VARCHAR(45) NULL,
   id_partido INT NULL,
   uf VARCHAR(45) NULL,
@@ -58,14 +58,14 @@ CREATE TABLE IF NOT EXISTS autor (
 
 DROP TABLE IF EXISTS orgao;
 CREATE TABLE IF NOT EXISTS orgao (
-  id INT NOT NULL,
+  id serial NOT NULL,
   sigla VARCHAR(45) NULL,
   PRIMARY KEY (id)
 );
 
 DROP TABLE IF EXISTS situacao;
 CREATE TABLE IF NOT EXISTS situacao (
-  id INT NOT NULL,
+  id serial NOT NULL,
   descricao VARCHAR(45) NULL,
   id_orgao INT NULL,
   ativa BOOL NULL,
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS situacao (
 
 DROP TABLE IF EXISTS proposicao;
 CREATE TABLE IF NOT EXISTS proposicao (
-  id INT NOT NULL,
+  id serial NOT NULL,
   nome VARCHAR(45) NULL,
   id_tipo_proposicao INT NULL,
   numero INT NULL,
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS proposicao (
 
 DROP TABLE IF EXISTS indexacao;
 CREATE TABLE IF NOT EXISTS indexacao (
-  id INT NOT NULL,
+  id serial NOT NULL,
   palavra VARCHAR(45) NULL,
   PRIMARY KEY (id)
 );
@@ -117,9 +117,16 @@ CREATE TABLE IF NOT EXISTS proposicao_indexacao (
 
 DROP TABLE IF EXISTS votacao;
 CREATE TABLE IF NOT EXISTS votacao (
-  id INT NOT NULL,
+  id serial NOT NULL,
   id_proposicao INT NULL,
   relevancia BOOL NULL,
   PRIMARY KEY (id),
   CONSTRAINT fk_votacao_proposicao FOREIGN KEY (id_proposicao) REFERENCES proposicao (id)
 );
+
+DROP TABLE IF EXISTS tramitacao;
+CREATE TABLE IF NOT EXISTS tramitacao (
+  id serial NOT NULL
+  id_proposicao integer NOT NULL,
+  data date NOT NULL,
+).
