@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS importacao_proposicao (
 DROP TABLE IF EXISTS autor;
 CREATE TABLE IF NOT EXISTS autor (
   id serial NOT NULL,
-  nome VARCHAR(200) NULL,
+  nome VARCHAR(1000) NULL,
   partido VARCHAR(45)  NULL,
   uf VARCHAR(4) NULL,
   CONSTRAINT autor_pkey PRIMARY KEY (id)

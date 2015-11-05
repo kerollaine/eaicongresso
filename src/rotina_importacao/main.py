@@ -31,11 +31,11 @@ try:
     # ContadorProposicao.executa(c)
 
     #Já foi executado uma vez, de 2010 até 2015. Tramitação não pode ser importada duas vezes.
-    for i in range(2010,2016):
-        anoImportacao = i;
-        ImportarTramitacao.executa(c, anoImportacao)
+    # for i in range(2010,2016):
+    #    anoImportacao = i;
+    #    ImportarTramitacao.executa(c, anoImportacao)
 
-    con.commit()
+    #con.commit()
 
     def obterproposicao(offset):
         try:
@@ -47,9 +47,14 @@ try:
 
         ImportarProposicao.executa(conexao, offset)
 
+    def obter_desatualizadas():
+        c.execute('SELECT id_proposicao FROM importacao_proposicao WHERE desatualizada = true')
+        desatualizadas = [id[0] for id in c]
+        return desatualizadas
+
     threads = []
 
-    while c.execute('SELECT count(id_proposicao) FROM importacao_proposicao WHERE desatualizada=true') >= 1:
+    while obter_desatualizadas():
         for x in range(0, 7):
             t = Thread(target=obterproposicao, args=(x*10, ))
             t.start()
