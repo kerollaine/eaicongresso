@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link class="include" rel="stylesheet" type="text/css"
+          href="/static/jquery.jqplot.min.css" />
+    {% extends "bootstrap/base.html" %}
+    {% block title %}Página inicial | eaicongresso{% endblock %}
+    {% block head %}
+{{super()}}
+    <div style="text-align: center" class="page-header">
+  <h1>eaicongresso</h1>
+      <small>Portal facilitador de acesso a dados governamentais abertos</small>
+      </div>
+{% endblock %}
+ {% block scripts %}
+    {{super()}}
+
+
+    <!--[if lt IE 9]><script language="javascript" type="text/javascript"
+                             src="/static/excanvas.js"></script><![endif]-->
+    <script class="include" type="text/javascript"
+            src="/static/jquery.min.js"></script>
+
+    <script class="code" type="text/javascript">
+        $(document).ready(function(){
+            $.getJSON('/_get_mes',function (mes) {
+                plot1 = $.jqplot ('chart1', [mes.output], {
+                    title: 'Proposições tramitadas por mês durante um ano',
+                    axesDefaults: {
+                        labelRenderer: $.jqplot.CanvasAxisLabelRenderer
+                    },
+                    seriesDefaults: {
+                        rendererOptions: {
+                            smooth: true
+                        }
+                    },
+                    axes: {
+                        xaxis: {
+                            label: "Mês/2015",
+                        },
+                        yaxis: {
+                            label: "Número de proposições"
+                        }
+                    },
+                    seriesDefaults: {
+                        pointLabels: {show: true}
+                    }
+                });
+            });
+        });
+    </script>
+    <script class="code2" type="text/javascript">
+        $(document).ready(function(){
+             $.getJSON('/_get_tema',function (tema) {
+                plot2 = $.jqplot('chart2', [tema.output], {
+                    title: 'Temas',
+                    seriesDefaults: {shadow: true, renderer: $.jqplot.PieRenderer, rendererOptions: { showDataLabels: true } },
+                    legend: { show:true }
+                });
+            });
+        });
+    </script>
+    <script class="include" type="text/javascript"
+            src="/static/jquery.jqplot.js"></script>
+    <script class="include" language="javascript" type="text/javascript"
+            src="/static/plugins/jqplot.dateAxisRenderer.min.js"></script>
+    <script type="text/javascript" src="/static/plugins/jqplot.pieRenderer.js"></script>
+    <script type="text/javascript" src="/static/plugins/jqplot.canvasTextRenderer.js"></script>
+    <script type="text/javascript" src="/static/plugins/jqplot.canvasAxisLabelRenderer.js"></script>
+    <script type="text/javascript" src="/static/plugins/jqplot.pointLabels.js"></script>
+
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar justified">
+  <div class="container-fluid justified">
+    <div class="navbar-header justified">
+     <button type="button" onclick='location.href="/"' class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Home
+</button>
+        <button type="button" onclick='location.href="/temas"' class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Gráfico por temas
+</button>
+        <button type="button" onclick='location.href="/proposicaopormes"' class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Gráfico por número de proposições
+</button>
+        <button type="button" onclick='location.href="/nuvem/"' class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> Nuvem de palavras
+</button>
+        <button type="button" onclick='location.href="/indexacao/"' class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Indexação
+</button>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+</head>
