@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3b1d293-7255-4d09-985e-8bda0c93b5ff" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../frontend/frontend.py" afterPath="$PROJECT_DIR$/../frontend/frontend.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../frontend/templates/layout.html" afterPath="$PROJECT_DIR$/../frontend/templates/layout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subrotinas/processar_palavras.py" afterPath="$PROJECT_DIR$/subrotinas/processar_palavras.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rotina_importacao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1138211">
+            <state vertical-scroll-proportion="0.0">
               <caret line="26" column="28" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="e#42#57#0" expanded="true" />
@@ -53,44 +56,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="processar_palavras.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="processar_palavras.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/subrotinas/processar_palavras.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.26960784">
+              <caret line="32" column="36" selection-start-line="31" selection-start-column="7" selection-end-line="32" selection-end-column="36" />
               <folding>
                 <element signature="e#42#51#0" expanded="true" />
-                <marker date="1447038833000" expanded="true" signature="1354:1394" placeholder="SELECT id FR..palavra..." />
-                <marker date="1447038833000" expanded="true" signature="1354:1395" placeholder="SELECT id FR..palavra..." />
-                <marker date="1447038833000" expanded="true" signature="1646:1676" placeholder="INSERT INTO ..." />
-                <marker date="1447038833000" expanded="true" signature="1646:1710" placeholder="INSERT INTO ..." />
-                <marker date="1447038833000" expanded="true" signature="2108:2164" placeholder="SELECT id, e..proposicao..." />
-                <marker date="1447038833000" expanded="true" signature="2449:2534" placeholder="SELECT descr..tema..." />
-                <marker date="1447038833000" expanded="true" signature="2449:2535" placeholder="SELECT descr..tema..." />
-                <marker date="1447038833000" expanded="true" signature="2449:2547" placeholder="SELECT id_te..tema..." />
-                <marker date="1447038833000" expanded="true" signature="2777:2829" placeholder="DELETE FROM ..." />
-                <marker date="1447038833000" expanded="true" signature="2777:2830" placeholder="DELETE FROM ..." />
-                <marker date="1447038833000" expanded="true" signature="2777:2841" placeholder="DELETE FROM ..." />
-                <marker date="1447038833000" expanded="true" signature="2913:2972" placeholder="INSERT INTO ..." />
-                <marker date="1447038833000" expanded="true" signature="2913:3003" placeholder="INSERT INTO ..." />
-                <marker date="1447038833000" expanded="true" signature="2913:3020" placeholder="INSERT INTO ..." />
-                <marker date="1447038833000" expanded="true" signature="2913:3038" placeholder="INSERT INTO ..." />
-                <marker date="1447038833000" expanded="true" signature="2913:3318" placeholder="INSERT INTO ..." />
-                <marker date="1447038833000" expanded="true" signature="3208:3256" placeholder="UPDATE propo..." />
+                <marker date="1447099039000" expanded="true" signature="1283:1323" placeholder="SELECT id FR..palavra..." />
+                <marker date="1447099039000" expanded="true" signature="1283:1324" placeholder="SELECT id FR..palavra..." />
+                <marker date="1447099039000" expanded="true" signature="1575:1605" placeholder="INSERT INTO ..." />
+                <marker date="1447099039000" expanded="true" signature="1575:1639" placeholder="INSERT INTO ..." />
+                <marker date="1447099039000" expanded="true" signature="2037:2093" placeholder="SELECT id, e..proposicao..." />
+                <marker date="1447099039000" expanded="true" signature="2378:2463" placeholder="SELECT descr..tema..." />
+                <marker date="1447099039000" expanded="true" signature="2378:2464" placeholder="SELECT descr..tema..." />
+                <marker date="1447099039000" expanded="true" signature="2378:2476" placeholder="SELECT id_te..tema..." />
+                <marker date="1447099039000" expanded="true" signature="2706:2758" placeholder="DELETE FROM ..." />
+                <marker date="1447099039000" expanded="true" signature="2706:2759" placeholder="DELETE FROM ..." />
+                <marker date="1447099039000" expanded="true" signature="2706:2770" placeholder="DELETE FROM ..." />
+                <marker date="1447099039000" expanded="true" signature="2842:2901" placeholder="INSERT INTO ..." />
+                <marker date="1447099039000" expanded="true" signature="2842:2932" placeholder="INSERT INTO ..." />
+                <marker date="1447099039000" expanded="true" signature="2842:2949" placeholder="INSERT INTO ..." />
+                <marker date="1447099039000" expanded="true" signature="2842:2967" placeholder="INSERT INTO ..." />
+                <marker date="1447099039000" expanded="true" signature="2842:3247" placeholder="INSERT INTO ..." />
+                <marker date="1447099039000" expanded="true" signature="3137:3185" placeholder="UPDATE propo..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rotina_importacao.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rotina_importacao.log">
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -131,10 +121,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
-    <option name="y" value="24" />
-    <option name="width" value="1311" />
-    <option name="height" value="744" />
+    <option name="x" value="54" />
+    <option name="y" value="-4" />
+    <option name="width" value="1313" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -175,8 +165,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -211,6 +199,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -505,7 +495,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="24" width="1311" height="744" extended-state="6" />
+    <frame x="54" y="-4" width="1313" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -513,10 +503,8 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20823799" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39875388" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2110672" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.49407116" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40031153" sideWeight="0.5059289" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -524,10 +512,33 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39875388" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39875388" sideWeight="0.49407116" order="7" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32932332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39875388" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40031153" sideWeight="0.5059289" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20823799" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32781956" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.49407116" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -554,7 +565,7 @@
     <entry file="file://$PROJECT_DIR$/subrotinas/importar_proposicao.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="44" selection-start-line="28" selection-start-column="8" selection-end-line="30" selection-end-column="44" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -562,7 +573,7 @@
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#42#57#0" expanded="true" />
             <marker date="1447038766000" expanded="true" signature="2144:2218" placeholder="SELECT id_pr..importacao_proposicao..." />
@@ -570,12 +581,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subrotinas/importar_tramitacao.py">
+    <entry file="file://$PROJECT_DIR$/subrotinas/processar_palavras.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#42#57#0" expanded="false" />
+            <element signature="e#42#51#0" expanded="true" />
+            <marker date="1447099039000" expanded="true" signature="1283:1323" placeholder="SELECT id FR..palavra..." />
+            <marker date="1447099039000" expanded="true" signature="1283:1324" placeholder="SELECT id FR..palavra..." />
+            <marker date="1447099039000" expanded="true" signature="1575:1605" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="1575:1639" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="2037:2093" placeholder="SELECT id, e..proposicao..." />
+            <marker date="1447099039000" expanded="true" signature="2378:2463" placeholder="SELECT descr..tema..." />
+            <marker date="1447099039000" expanded="true" signature="2378:2464" placeholder="SELECT descr..tema..." />
+            <marker date="1447099039000" expanded="true" signature="2378:2476" placeholder="SELECT id_te..tema..." />
+            <marker date="1447099039000" expanded="true" signature="2706:2758" placeholder="DELETE FROM ..." />
+            <marker date="1447099039000" expanded="true" signature="2706:2759" placeholder="DELETE FROM ..." />
+            <marker date="1447099039000" expanded="true" signature="2706:2770" placeholder="DELETE FROM ..." />
+            <marker date="1447099039000" expanded="true" signature="2842:2901" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="2842:2932" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="2842:2949" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="2842:2967" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="2842:3247" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="3137:3185" placeholder="UPDATE propo..." />
           </folding>
         </state>
       </provider>
@@ -603,9 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="e#42#57#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -632,9 +657,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subrotinas/importar_proposicao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="44" selection-start-line="28" selection-start-column="8" selection-end-line="30" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#42#57#0" expanded="false" />
+            <element signature="e#42#57#0" expanded="true" />
+            <marker date="1447038766000" expanded="true" signature="2144:2218" placeholder="SELECT id_pr..importacao_proposicao..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subrotinas/importar_tramitacao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -657,9 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
-          <folding>
-            <element signature="e#42#57#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -671,13 +716,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rotina_importacao.log">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2301" column="47" selection-start-line="2301" selection-start-column="47" selection-end-line="2301" selection-end-column="47" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subrotinas/importar_situacao.py">
@@ -695,13 +740,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rotina_importacao.log">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1508" column="0" selection-start-line="1508" selection-start-column="0" selection-end-line="1508" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
@@ -772,9 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="e#42#57#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -783,7 +825,7 @@
         <state vertical-scroll-proportion="0.36619717">
           <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
           <folding>
-            <element signature="e#42#57#0" expanded="true" />
+            <element signature="e#42#57#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -797,50 +839,49 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rotina_importacao.log">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#57#0" expanded="true" />
+            <marker date="1447038766000" expanded="true" signature="2144:2218" placeholder="SELECT id_pr..importacao_proposicao..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subrotinas/processar_palavras.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.26960784">
+          <caret line="32" column="36" selection-start-line="31" selection-start-column="7" selection-end-line="32" selection-end-column="36" />
           <folding>
             <element signature="e#42#51#0" expanded="true" />
-            <marker date="1447038833000" expanded="true" signature="1354:1394" placeholder="SELECT id FR..palavra..." />
-            <marker date="1447038833000" expanded="true" signature="1354:1395" placeholder="SELECT id FR..palavra..." />
-            <marker date="1447038833000" expanded="true" signature="1646:1676" placeholder="INSERT INTO ..." />
-            <marker date="1447038833000" expanded="true" signature="1646:1710" placeholder="INSERT INTO ..." />
-            <marker date="1447038833000" expanded="true" signature="2108:2164" placeholder="SELECT id, e..proposicao..." />
-            <marker date="1447038833000" expanded="true" signature="2449:2534" placeholder="SELECT descr..tema..." />
-            <marker date="1447038833000" expanded="true" signature="2449:2535" placeholder="SELECT descr..tema..." />
-            <marker date="1447038833000" expanded="true" signature="2449:2547" placeholder="SELECT id_te..tema..." />
-            <marker date="1447038833000" expanded="true" signature="2777:2829" placeholder="DELETE FROM ..." />
-            <marker date="1447038833000" expanded="true" signature="2777:2830" placeholder="DELETE FROM ..." />
-            <marker date="1447038833000" expanded="true" signature="2777:2841" placeholder="DELETE FROM ..." />
-            <marker date="1447038833000" expanded="true" signature="2913:2972" placeholder="INSERT INTO ..." />
-            <marker date="1447038833000" expanded="true" signature="2913:3003" placeholder="INSERT INTO ..." />
-            <marker date="1447038833000" expanded="true" signature="2913:3020" placeholder="INSERT INTO ..." />
-            <marker date="1447038833000" expanded="true" signature="2913:3038" placeholder="INSERT INTO ..." />
-            <marker date="1447038833000" expanded="true" signature="2913:3318" placeholder="INSERT INTO ..." />
-            <marker date="1447038833000" expanded="true" signature="3208:3256" placeholder="UPDATE propo..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1138211">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#57#0" expanded="true" />
-            <marker date="1447038766000" expanded="true" signature="2144:2218" placeholder="SELECT id_pr..importacao_proposicao..." />
+            <marker date="1447099039000" expanded="true" signature="1283:1323" placeholder="SELECT id FR..palavra..." />
+            <marker date="1447099039000" expanded="true" signature="1283:1324" placeholder="SELECT id FR..palavra..." />
+            <marker date="1447099039000" expanded="true" signature="1575:1605" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="1575:1639" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="2037:2093" placeholder="SELECT id, e..proposicao..." />
+            <marker date="1447099039000" expanded="true" signature="2378:2463" placeholder="SELECT descr..tema..." />
+            <marker date="1447099039000" expanded="true" signature="2378:2464" placeholder="SELECT descr..tema..." />
+            <marker date="1447099039000" expanded="true" signature="2378:2476" placeholder="SELECT id_te..tema..." />
+            <marker date="1447099039000" expanded="true" signature="2706:2758" placeholder="DELETE FROM ..." />
+            <marker date="1447099039000" expanded="true" signature="2706:2759" placeholder="DELETE FROM ..." />
+            <marker date="1447099039000" expanded="true" signature="2706:2770" placeholder="DELETE FROM ..." />
+            <marker date="1447099039000" expanded="true" signature="2842:2901" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="2842:2932" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="2842:2949" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="2842:2967" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="2842:3247" placeholder="INSERT INTO ..." />
+            <marker date="1447099039000" expanded="true" signature="3137:3185" placeholder="UPDATE propo..." />
           </folding>
         </state>
       </provider>

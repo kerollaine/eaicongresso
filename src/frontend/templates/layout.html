@@ -8,7 +8,8 @@
     {% block head %}
 {{super()}}
     <div style="text-align: center" class="page-header">
-  <h1>eaicongresso</h1>
+        <img src='static/bubble.png'>
+    <h1>eaicongresso</h1>
       <small>Portal facilitador de acesso a dados governamentais abertos</small>
       </div>
 {% endblock %}
@@ -72,26 +73,14 @@
 {% endblock %}
 
 {% block navbar %}
-<nav class="navbar justified">
-  <div class="container-fluid justified">
-    <div class="navbar-header justified">
-     <button type="button" onclick='location.href="/"' class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Home
-</button>
-        <button type="button" onclick='location.href="/temas"' class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Gráfico por temas
-</button>
-        <button type="button" onclick='location.href="/proposicaopormes"' class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Gráfico por número de proposições
-</button>
-        <button type="button" onclick='location.href="/nuvem/"' class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span> Nuvem de palavras
-</button>
-        <button type="button" onclick='location.href="/indexacao/"' class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span> Indexação
-</button>
-    </div>
-  </div>
+<nav class="navbar">
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"><a href="/">Home</a></li>
+  <li role="presentation"><a href="/temas">Gráfico por temas</a></li>
+  <li role="presentation"><a href="/proposicaopormes">Gráfico por número de proposições</a></li>
+  <li role="presentation"><a href="/indexacao">Pesquisa por tema ou palavras-chave</a></li>
+</ul>
 </nav>
+
 {% endblock %}
 </head>

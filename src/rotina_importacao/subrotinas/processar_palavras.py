@@ -29,7 +29,6 @@ def processa_palavras(caracteres, cursor):
 
     logging.info('Processa a palavra no banco de dados.')
     for palavra in palavras:
-        #palavra = normalize('NFKD', palavra).encode('ASCII','ignore')
         sql = 'SELECT id FROM palavra where descricao = %(palavra)s'
         param = {'palavra': palavra}
 
