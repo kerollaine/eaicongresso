@@ -95,7 +95,7 @@ CREATE OR REPLACE FUNCTION obter_proposicao(p_id integer, p_nome varchar, p_nume
 			UPDATE proposicao
    				SET nome=p_nome, numero=p_numero, ano=p_ano, data_apresentacao=p_data_ap, data_ultimo_despacho=p_data_despacho, 
 		       ementa=p_ementa, explicacao_ementa=p_explicacao_ementa, indexacao=p_indexacao, link_teor=p_link, id_autor_principal=id_autor, 
-		       id_tipo_proposicao=id_tipo, id_situacao=id_status, indexada = false
+		       id_tipo_proposicao=id_tipo, id_situacao=id_status
  			WHERE id = p_id;
 
  		ELSE 

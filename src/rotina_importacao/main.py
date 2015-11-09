@@ -9,6 +9,7 @@ from subrotinas.importar_situacao import ImportarSituacao
 from subrotinas.contador_proposicao import ContadorProposicao
 from subrotinas.importar_tramitacao import ImportarTramitacao
 from subrotinas.importar_proposicao import ImportarProposicao
+from subrotinas.processar_palavras import ProcessarPalavras
 
 try:
     logging.basicConfig(level=logging.DEBUG,
@@ -21,6 +22,7 @@ try:
     #Faz a conexao com o banco de dados, utilizado em outras rotinas como a importação de tramitações
     try:
         con = psycopg2.connect(host='localhost', user='eaicongresso', password='eai2015cong', dbname='eaicongresso')
+        con.set_client_encoding('utf8')
         c = con.cursor()
         logging.info('Conexão com o banco de dados estabelecida.')
     except Exception:
@@ -36,6 +38,15 @@ try:
     #    ImportarTramitacao.executa(c, anoImportacao)
 
     #con.commit()
+
+    logging.info('Rotina de indexação iniciada')
+
+    ProcessarPalavras.executa(con)
+
+    logging.info('Rotina de indexação finalizada')
+
+    quit()
+
 
     def obterproposicao(offset):
         try:
@@ -65,6 +76,9 @@ try:
             t.join()
 
     logging.info('Rotina de importação finalizada.')
+
+    logging.info('Rotina de indexação iniciada')
+
 
 except Exception:
     logging.exception('Ocorreu um erro. Exceção abaixo.')
