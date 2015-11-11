@@ -27,6 +27,12 @@
 {BERNERS-LEE, T. Linked data-design issues.
 2006.}
 
+\bibitem[Bird, Klein e Loper 2009]{nltk}
+\abntrefinfo{Bird, Klein e Loper}{BIRD; KLEIN; LOPER}{2009}
+{BIRD, S.; KLEIN, E.; LOPER, E. \emph{Natural Language Processing with Python}.
+  1st. ed. [S.l.]: O'Reilly Media, Inc., 2009.
+ISBN 0596516495, 9780596516499.}
+
 \bibitem[Bizer, Heath e Berners-Lee 2009]{bizer2009linked}
 \abntrefinfo{Bizer, Heath e Berners-Lee}{BIZER; HEATH; BERNERS-LEE}{2009}
 {BIZER, C.; HEATH, T.; BERNERS-LEE, T. \emph{Linked data-the story so far}.
@@ -85,5 +91,10 @@ Brasília, 2011. Dispon{\'\i}vel em: \url{opengovpartnership.org}.}
 {VAZ, J.~C.; RIBEIRO, M.~M.; MATHEUS, R. Dados governamentais abertos e seus
   impactos sobre os conceitos e pr{\'a}ticas de transpar{\^e}ncia no brasil.
 \emph{Cadernos PPG-AU/UFBA}, v.~9, n.~1, 2011.}
+
+\bibitem[Veloso 2014]{devmedia}
+\abntrefinfo{Veloso}{VELOSO}{2014}
+{VELOSO, S. Conhecendo o apache lucene.
+2014.}
 
 \end{thebibliography}

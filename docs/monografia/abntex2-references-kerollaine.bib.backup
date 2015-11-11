@@ -13,6 +13,21 @@
   year={2010}
 }
 
+@book{ntlk,
+  author = {Steven Bird and Ewan Klein and Edward Loper},
+  title = {{Natural Language Processing with Python}},
+  publisher = {O'Reilly Media},
+  year = 2009
+}
+
+@book{soapbook,
+	author={Arciniegas, Fabio},
+	edition={1},
+	publisher={Pearson Education do Brasil},
+	title={C++ XML},
+	year={2002}}
+
+
 @manual{opengovdata,
   title={Como conseguir dados governamentais abertos},
   author={OpenGovData},
@@ -104,25 +119,6 @@
 	Title = {Proposi{\c c}\~oes},
 	Url = {http://www2.camara.leg.br/transparencia/dados-abertos/dados-abertos-legislativo/webservices/proposicoes-1/proposicoes},
 	Year = {2015}}
-	
-@book{ibge1993,
-	Address = {Rio de Janeiro},
-	Author = {IBGE},
-	Date-Added = {2013-08-21 13:56:10 +0000},
-	Date-Modified = {2013-08-21 13:56:10 +0000},
-	Edition = {3},
-	Organization = {http://biblioteca.ibge.gov.br/visualizacao/livros/liv23907.pdf},
-	Publisher = {Centro de Documenta{\c c}{\~a}o e Dissemina{\c c}{\~a}o de Informa{\c c}{\~o}es. Funda{\c c}{\~a}o Intituto Brasileiro de Geografia e Estat{\'\i}stica},
-	Title = {Normas de apresenta{\c c}{\~a}o tabular},
-	Urlaccessdate = {21 ago 2013},
-	Year = {1993}}
-	
-@book{soapbook,
-	Author = {Arciniegas, Fabio},
-	Edition = {1},
-	Publisher = {Pearson Education do Brasil},
-	Title = {C++ XML},
-	Year = {2002}}
 
 @misc{abntex2-wiki-como-customizar,
 	Author = {abnTeX2},

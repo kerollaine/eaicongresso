@@ -1341,9 +1341,90 @@ cada transação um \emph{commit} foi efetuado, que significa finalizá-la e per
 Com o objetivo de identificar todas as falhas durante a importação, todas as etapas da execução foram registradas em um arquivo de \emph{log}, denominado
 'rotina\_importacao.log'. Para isso, foi utilizada a biblioteca \emph{'logging'} do Python.
 
+\section{Processamento de Linguagem Natural e \emph{stop words}}
+Entende-se por linguagem natural as linguagens utilizadas para comunicações no cotidiano, por seres humanos. O processamento de
+linguagens naturais, também conhecido como linguística computacional engloba qualquer tipo de manipulação computacional de 
+linguagens naturais. Tecnologias baseadas neste conceito estão se tornando cada vez mais frequentes, como por exemplo telefones
+oferecerem suporte a predição de texto e reconhecimento de escrita ou motores de pesquisa permitirem acessar informações em textos
+não estruturados. \cite{nltk}
+
+Neste projeto foi utilizado o framework \emph{Natural Language Toolkit} (NLTK), que contém um conjunto de bibliotecas e programas 
+para o processamento de linguagens naturais, desenvolvido em Python e destina-se a apoiar a pesquisa e ensino de linguística 
+computacional ou áreas afins, como ciência cognitiva, inteligência artificial, recuperação de informações ou aprendizagem de máquina.
+
+Os módulos do NLTK utilizados neste projeto foram o 'nltk.corpus', com \emph{interfaces} padrão para córpora e léxicos e 'nltk.tokenize'
+para o processamento de \emph{strings}.
+
+Para o processar as ementas e temas e indexá-las também foram descartadas as palavras de um conjunto denominado \emph{stop words},
+onde as palavras contidas são consideradas irrelevantes para o conjunto de resultados. O conjunto utilizado veio do módulo 
+'nltk.corpus', importação denominada 'stopwords'.
+
+
 \section{A rotina de indexação}
+Para possibilitar a pesquisa através do tema ou conteúdo de determinada proposição é necessário processar as informações de forma que a 
+recuperação dos dados seja realizada de maneira rápida. Inicialmente foi identificado um campo que continha palavras-chave relacionadas a cada item, denominado 'indexacao'. Mas
+após a importação dos dados foi constatado que muitas proposições continham este campo com o valor nulo. Logo, foi necessário alterar os campos a serem indexados 
+pelo portal, e foram selecionados os campos 'tema' e 'ementa' para este propósito.
+
+Outro requisito é ordenar os resultados por quantidade de correspondências
+encontradas entre os caracteres pesquisados e os dados contidos no banco de dados. Para isso, foi necessário indexar tais dados utilizando uma estrutura
+de dados chamada lista invertida, onde uma lista de chaves primárias é associada à uma outra lista com chaves secundárias, conforme 
+exemplificado na \autoref{listainvertida}. Esta
+estrutura de dados permite uma ótima indexação e é utilizada em motores de busca como o Google, ou sistemas de gerenciamento de 
+banco de dados. A desvantagem é a maior dificuldade em atualizar e inserir novas informações.
+
+\begin{figure}[htb]
+	\caption{\label{listainvertida}Exemplo de funcionamento da lista invertida}
+	\begin{center}
+	    \includegraphics[scale=0.65]{listainv.jpg}
+	\end{center}
+	\legend{Fonte:\citeonline{devmedia}}
+\end{figure}
+
+No banco de dados do portal foi criada uma tabela chamada 'palavra', destinada a inserção de todas as palavras separadas, 
+denominadas \emph{tokens}. Também foi criada uma coluna do tipo \emph{boolean} na tabela 'proposicao' chamada 'indexada', 
+que será por padrão falsa. Uma tabela chamada 'palavra\_proposicao' irá conter o código de cada \emph{token} e o seu texto 
+correspondente.
+
+Para processar as palavras e criar os índices, primeiramente três cursores para conexão com o banco de dados referentes ao
+tema, proposições e persistência foram definidos. O código irá identificar todas as proposições que não foram indexadas, e 
+chamar o método denominado 'processa\_palavras', que recebe como parâmetros um conjunto de \emph{strings} denominado caracteres 
+e um cursor. Primeiramente, decodifica os caracteres do padrão UTF-8, coloca todos os caracteres em caixa baixa, e substitui todas
+as pontuações e símbolos por um espaço em branco, utilizando expressões regulares.
+
+Após o processo inicial de tratamento dos caracteres é utilizada uma função da biblioteca NLTK chamada 'word\_tokenize', que 
+recebe como parâmetros as palavras tratadas e a linguagem natural do conjunto, no caso português. Após dividir a \emph{string} 
+em \emph{tokens}, o conjunto é normalizado para não ter nenhum tipo de acentuação. Neste ponto, \emph{tokens} que são \emph{stop words}
+ou tem o tamanho menor ou igual a dois são desconsiderados. Finalmente, é verificado se o banco de dados contém cada palavra do conjunto
+e caso negativo, uma inserção é realizada e a transação é \emph{commitada}. Com todos os códigos de palavras, inserções são 
+realizadas na tabela de relação entre as palavras e as proposições, criando um índice. Além disso, para a melhoria da perfomance
+da aplicação foi criado um índice no banco de dados para a coluna de descrição da tabela 'palavras'.
+
+Como resultado, foram inseridos 2.067.469 registros na tabela que representa a lista invertida e 41.111 palavras foram definidas.
+
+\section{Aplicação \emph{web}}
+Para apresentar alguns gráficos estatísticos e fornecer uma área de busca por tema e/ou ementa para o usuário final, foi criado um projeto 
+denominado 'frontend', especifico para a aplicação \emph{web}. Foi utilizada a linguagem de programação Python com o \emph{microframework web} Flask, por 
+ser uma ferramenta mais leve e estável. O Bootstrap também é um \emph{framework} que auxilia os desenvolvedores de páginas \emph{web} 
+porque permite a inclusão de componentes de maneira rápida e eficiente, criando um template atual e totalmente responsivo. O plugin 
+de gráficos utilizado foi implementado em JQuery e é chamado JqPlot.
+
+No arquivo principal do projeto são definidas as rotas, que correspondem aos diretórios da aplicação acessados via navegador. Cada rota 
+tem o seu método, que pode ou não retornar informações para o arquivo em formato HTML. Na tela de pesquisa por tema ou ementa, os caracteres
+recebidos tem um tratamento similar ao tratamento da lista invertida, exceto que ao invés de novas inserções, este método apenas
+procura por resultados favoráveis e faz um \emph{ranking} dos resultados em ordem decrescente por maior número de palavras encontradas e data de apresentação
+da proposição. A \autoref{eaicong} representa o portal acessado de um dispositivo \emph{mobile}.
+
+\begin{figure}[htb]
+	\caption{\label{eaicong}Eaicongresso acessado de dispositivo \emph{mobile}}
+	\begin{center}
+	    \includegraphics[scale=4.65]{eaicong.jpg}
+	\end{center}
+\end{figure}
 
 
+Um dos gráficos criados com o JqPlot exibem o percentual de temas de todas as proposições do ano de 2015, e o outro a quantidade de proposições
+tramitadas no período de um ano, por mês.
 % ---
 % Conclusão
 % ---
@@ -1365,6 +1446,10 @@ Durante a pesquisa foram constatadas algumas falhas no conjunto de dados utiliza
 Câmara dos Deputados, no que se refere a padronização entre os métodos disponibilizados via \emph{web services}, assim
 como a estrutura do banco de dados disponibilizado. Tais dificuldades não impediram a utilização e otimização dos dados
 coletados em outra base de dados modelada para a aplicação.
+
+
+\chapter{Trabalhos Futuros}
+...
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS

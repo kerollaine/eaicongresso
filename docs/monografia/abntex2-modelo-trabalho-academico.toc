@@ -19,7 +19,12 @@
 \contentsline {section}{\numberline {5.1}O banco de dados}{45}{section.5.1}
 \contentsline {section}{\numberline {5.2}Consumindo o \emph {web service}}{46}{section.5.2}
 \contentsline {section}{\numberline {5.3}A rotina de importa\IeC {\c c}\IeC {\~a}o}{46}{section.5.3}
+\contentsline {section}{\numberline {5.4}Processamento de Linguagem Natural e \emph {stop words}}{49}{section.5.4}
+\contentsline {section}{\numberline {5.5}A rotina de indexa\IeC {\c c}\IeC {\~a}o}{49}{section.5.5}
+\contentsline {section}{\numberline {5.6}Aplica\IeC {\c c}\IeC {\~a}o \emph {web}}{51}{section.5.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{51}{chapter.6}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{53}{chapter.6}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Trabalhos Futuros}}{55}{chapter.7}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{Refer\^encias}{53}{section*.12}
+\contentsline {chapter}{Refer\^encias}{57}{section*.12}
