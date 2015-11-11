@@ -543,7 +543,7 @@ Cinco estrelas: Atender aos requisitos de todas as classificações anteriores e
 pessoas para criar um contexto.
 
 Muitos governos já disponibilizam seus dados a partir dos princípios anteriormente apresentados, como Estados Unidos,
-Reino Unido, Austrália e Nova Zelândia, \citeonline{agunegreg}. Apesar da recente existência de dados abertos governamentais,
+Reino Unido, Austrália e Nova Zelândia, \cite{agunegreg}. Apesar da recente existência de dados abertos governamentais,
 estes governos já adotam essa teoria como política pública de promoção da transparência. Segundo \citeonline{vaz2011dados}, o Brasil ainda não disponibiliza os
 seus dados integralmente utilizando os formatos abertos.
 
@@ -579,7 +579,7 @@ Uma delas é o Laboratório Hacker da Câmara dos Deputados, que foi criado pela
 de 18/12/2013, com o objetivo de promover ações colaborativas visando o aprimoramento da transparência legislativa e da 
 participação popular. Como definido pela própria Resolução, o Laboratório conta com espaço físico de acesso e uso livres 
 para qualquer cidadão, especialmente programadores e desenvolvedores de softwares preferencialmente livres, parlamentares e 
-servidores públicos, onde poderão utilizar dados públicos de forma colaborativa para ações de cidadania, \citeonline{wsproposicoes}.
+servidores públicos, onde poderão utilizar dados públicos de forma colaborativa para ações de cidadania, \cite{wsproposicoes}.
 
 Para o desenvolvimento do portal foi utilizado o serviço de Dados Abertos da Câmara dos Deputados, que contém uma coleção de 
 funcionalidades permitindo o acesso direto aos dados produzidos na Câmara dos Deputados. O conjunto de dados do Legislativo contém dados sobre deputados, órgãos legislativos, proposições, sessões plenárias e reuniões 
@@ -1218,44 +1218,90 @@ nesta relação para tal não conter informações redundantes.
   
   }
 \end{table}
-% ----------------------------------------------------------
-% PARTE
-% ----------------------------------------------------------
-%\part{Resultados}
-% ----------------------------------------------------------
 
-% ---
-% primeiro capitulo de Resultados
-% ---
-%\chapter{Lectus lobortis condimentum}
-% ---
+\chapter{O projeto}
+Tarefa: Detalhar toda a estrutura do projeto e o que cada método faz.
 
-% ---
-%\section{Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-%posuere cubilia Curae}
-% ---
+\chapter{Desenvolvimento do portal}
+Esta seção irá descrever todo o processo de desenvolvimento do portal facilitador de acesso a dados governamentais públicos. A linguagem utilizada para implementação 
+da aplicação é o Python.
 
-%\lipsum[21-22]
+Todos os dados da aplicação como documentação, código fonte, imagens e \emph{scripts} estão disponíveis em 
+um repositório remoto através do GitHub, que é um serviço de hospedagem distribuído desenvolvido em linguagem Ruby on Rails para projetos de código aberto que
+utilizam o controle de versão Git. O Git é basicamente um sistema de versionamento de arquivos, onde é possível controlar várias alterações em um mesmo arquivo e voltá-lo para versões anteriores, assim como trabalhar em equipe sem maiores 
+problemas com a edição de um mesmo projeto.
+O repositório criado foi chamado de 'eaicongresso' e está disponível para acesso através do endereço https://github.com/kerollaine/eaicongresso.
 
-% ---
-% segundo capitulo de Resultados
-% ---
-%\chapter{Nam sed tellus sit amet lectus urna ullamcorper tristique interdum
-%elementum}
-% ---
+\section{O banco de dados}
+O sistema gerenciador de banco de dados escolhido foi o PostgreSQL, instalado através do gerenciador de pacotes do sistema operacional denominado Ubuntu 14.04.
+O \emph{script} de criação das tabelas da base de dados do portal foi implementado utilizando um editor de arquivos chamado Sublime e os testes foram realizados em um serviço
+de execução de \emph{scripts online} chamado SQLFiddle. Outro teste realizado antes de persistir as alterações no banco de dados foi a execução do \emph{script} através utilização das cláusulas \emph{begin} e \emph{rollback}, o qual reverte as alterações ao estado inicial antes da transação. Para 
+a aplicação foi criado um usuário para acesso e um banco de dados chamado 'eaicongresso'.
 
-% ---
-%\section{Pellentesque sit amet pede ac sem eleifend consectetuer}
-% ---
+Algumas regras de negócio foram implementadas dentro da aplicação de banco de dados utilizando procedimentos armazenados que são conjuntos
+de instruções SQL que podem conter parâmetros de entrada e/ou saída e não retornam resultados, ao contrário de funções que 
+obrigatoriamente tem um retorno declarado. Para as funções foi utilizado o O PL/pgSQL, que é uma linguagem procedural para o banco de 
+dados PostgreSQL que pode ser usado para criar funções e \emph{triggers}, adicionar estruturas de controle para a 
+linguagem SQL, fazer cálculos complexos, herdar tipos de dados definidos pelos usuários, funções e operadores.
 
-%\lipsum[24]
 
-% ----------------------------------------------------------
-% Finaliza a parte no bookmark do PDF
-% para que se inicie o bookmark na raiz
-% e adiciona espaço de parte no Sumário
-% ----------------------------------------------------------
-%\phantompart
+\section{SOAP}
+SOAP significa Protocolo Simples de Acesso a Objetos, é um protocolo de comunicação baseado em XML que permite a comunicação de mensagens entre aplicações via HTTP, normalmente utilizado em WebServices.
+
+\section{Consumindo o \emph{web service}}
+Para consumir os dados disponibilizados foram pesquisadas várias bibliotecas em Python para utilizar o SOAP, mas a única disponível
+e atualizada recentemente é a PySimpleSOAP. Entretanto ao acessar o \emph{web service} da câmara dos deputados,a mensagem de retorno 'Nossos sistemas automáticos de segurança impediram que a operação fosse concluída.
+Isso pode ocorrer quando você copia dados de outros sites e eles vêm com conteúdos não permitidos.' é exibida. A central de atendimento da câmara dos deputados informou que estão
+cientes do problema de instabilidade do serviço e que não tem um prazo final para a resolução do problema. Há várias \emph{issues} cadastradas 
+no repositório de dados abertos relatando problemas de indisponibilidade de serviços mas nenhuma solução foi encontrada.
+
+Logo, foi necessário alterar a forma de importar os dados necessários para requisições HTTP diretas, utilizando a biblioteca 'requests' do Python onde o resultado é um retorno em formato XML. Para traduzir
+o retorno em um objeto em Python foi utilizada a biblioteca ElementTree.
+
+\section{A rotina de importação}
+Durante o desenvolvimento desta rotina de importação dos dados disponibilizados para a aplicação foi verificada 
+uma diferença entre a documentação encontrada e a realidade. Como exemplo pode-se citar o 'OrgaoNumerador' e 'Orgao' que são a mesma
+tabela e informações. Logo, a tabela 'Orgao' inicialmente prevista no projeto do portal foi excluída, mantendo apenas a outra. A 
+coluna 'idOrgao' da tabela 'Situacao' também foi excluída pois não há sentido dentro do contexto da tabela.
+
+Outros problemas foram encontrados durante a importação, como extrações sem código identificador ou registros duplicados, que seriam
+utilizados como chave primária dentro de seu escopo. Problemas como estes tornam impossível a utilização
+de vários métodos disponibilizados, sendo necessário extrair a maioria dos dados do método 'ListarProposicoes' para popular 
+as tabelas da aplicação em desenvolvimento.
+
+Para obter uma amostra da quantidade de proposições que serão tratadas por ano, foi implementado um contador de proposições. 
+Para isso, inicialmente faz-se a requisição para o método 'ListarSiglasTipoProposição' onde será formado um conjunto de siglas, 
+pois para acessar o ListarProposicoes é necessário no mínimo enviar os parâmetros de sigla e ano.
+
+Após, como teste, foi realizada a requisição para o método 'ListarProposicoes' enviando as siglas para o ano de 2015 e contando
+todas as proposições encontradas no retorno XML.Em 2014 foram encontradas 14468 proposições. Analisando os dados adquiridos durante a 
+amostra observou-se que nem todas as informações necessárias para o portal estão no retorno do método 'ListarProposicoes' e que para 
+isso seria necessário chamar o método 'ObterProposicaoPorID', pois contém campos como o 'indexacao' e o 'tema' que são 
+extremamente importantes para várias análises que o portal fará sobre os dados. Fazer duas chamadas custaria bem mais
+que uma chamada ao serviço externo através da internet. 
+
+Outra divergência encontrada foi que apesar da existência de um método para listar o tipo de autor em nenhum 
+resultado de outros métodos utilizados este campo é vinculado, sendo que para relacionar este tipo de autor à 
+algum autor seja necessário utilizar outro \emph{web service} específico denominado Deputados, onde uma busca pelo \emph{id} 
+seria realizada, saindo do escopo de proposição e dificultando o processo de importação de dados para o portal, tornando-o 
+assim inviável. Outra ocorrência evidenciada apenas após os testes foi o 'ideCadastro' do autor da proposição, 
+que aparece como nulo quando a autoria é relacionada à determinada comissão. Logo, este campo não pôde ser utilizado pela aplicação.
+
+Durante esta etapa do desenvolvimento houve muita dificuldade para entender alguns registros, como por exemplo
+o 'idOrgao' retornado em um conjunto de situações. Em nenhum diretório foi encontrada documentação detalhada sobre a 
+relação de cada dado com o conjunto extraído, sendo necessário tempo extra para implementação e execução de testes para entender 
+o cenário a ser trabalhado, contexto e escopo das informações.
+
+Sendo assim, muitas tabelas mudaram sua representação na aplicação apenas para colunas do tipo \emph{string} da proposição,
+já que terão que ser alteradas sermpre que houver nova tramitação e não temos um \emph{web service} para atualizar a tabela como um 
+todo diretamente. Para o auto incremento dos identificadores dos registros no banco de dados foi necessário alterar todas as colunas denominadas 'id' 
+de tipo \emph{integer} para \emph{serial}. A maioria dos procedimentos inseridos no banco de dados consistiu em comparar determinado dado em texto, tratá-lo
+para tirar os espaços e vírgulas ou ponto e vírgula, verificar se existe no banco de dados e retornar o \emph{id} ou caso negativo 
+vincular um novo \emph{id} e fazer uma nova inserção.
+
+
+
+
 
 % ---
 % Conclusão
