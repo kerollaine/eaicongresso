@@ -15,14 +15,11 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {O portal}}{41}{chapter.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {O projeto}}{45}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Desenvolvimento do portal}}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}O banco de dados}{45}{section.5.1}
+\contentsline {section}{\numberline {5.2}Consumindo o \emph {web service}}{46}{section.5.2}
+\contentsline {section}{\numberline {5.3}A rotina de importa\IeC {\c c}\IeC {\~a}o}{46}{section.5.3}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Desenvolvimento do portal}}{47}{chapter.6}
-\contentsline {section}{\numberline {6.1}O banco de dados}{47}{section.6.1}
-\contentsline {section}{\numberline {6.2}SOAP}{48}{section.6.2}
-\contentsline {section}{\numberline {6.3}Consumindo o \emph {web service}}{48}{section.6.3}
-\contentsline {section}{\numberline {6.4}A rotina de importa\IeC {\c c}\IeC {\~a}o}{48}{section.6.4}
-\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{51}{chapter.7}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Conclus\IeC {\~a}o}}{51}{chapter.6}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{Refer\^encias}{53}{section*.12}

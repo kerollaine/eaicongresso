@@ -699,7 +699,7 @@ Formato: DD/MM/AAAA \\
 
 A \autoref{tabela-returnlistarproposicoes} apresenta os dados do retorno do método 'ListarProposicoes', contendo uma lista das proposições que satisfazem os critérios estabelecidos.
 
-O método "ListarSiglasTipoProposicao" retorna a lista de siglas de proposições, e não possui parâmetros de entrada. A \autoref{tabela-listarsiglasproposicao} apresenta os itens da lista das siglas dos tipos de proposição.
+O método 'ListarSiglasTipoProposicao' retorna a lista de siglas de proposições, e não possui parâmetros de entrada. A \autoref{tabela-listarsiglasproposicao} apresenta os itens da lista das siglas dos tipos de proposição.
 
 \begin{table}[htb]
 \IBGEtab{%
@@ -725,7 +725,7 @@ O método "ListarSiglasTipoProposicao" retorna a lista de siglas de proposiçõe
   }
 \end{table}
 
-O método "ListarSituacoesProposicao" retorna a lista de situações para proposições, e
+O método 'ListarSituacoesProposicao' retorna a lista de situações para proposições, e
 não possui parâmetros de entrada. A \autoref{tabela-situacaoproposicoes} apresenta os itens da lista dos tipos de situação das proposições.
 
 \begin{table}[htb]
@@ -798,7 +798,7 @@ não possui parâmetros de entrada. A \autoref{tabela-situacaoproposicoes} apres
   }
 \end{table}
 
-O método "ListarTiposAutores" retorna a lista de tipos de autores das proposições,
+O método 'ListarTiposAutores' retorna a lista de tipos de autores das proposições,
 e não possui parâmetros de entrada. A \autoref{tabela-tipoautores} apresenta os itens da lista dos tipos de autor das proposições.
 
 \begin{table}[htb]
@@ -1018,7 +1018,7 @@ A \autoref{tabela-returnobtervotacao} apresenta os dados do retorno do método �
   }
 \end{table}
 
-O método ’ListarProposicoesVotadasEmPlenario’ retorna a lista de proposições que sofreram votação em plenário em determinado ano. A \autoref{tabela-votadasemplenario} apresenta os parâmetros recebidos pelo método, assim
+O método 'ListarProposicoesVotadasEmPlenario' retorna a lista de proposições que sofreram votação em plenário em determinado ano. A \autoref{tabela-votadasemplenario} apresenta os parâmetros recebidos pelo método, assim
 como seu valor e descrição do campo.
 
 \begin{table}[htb]
@@ -1219,9 +1219,6 @@ nesta relação para tal não conter informações redundantes.
   }
 \end{table}
 
-\chapter{O projeto}
-Tarefa: Detalhar toda a estrutura do projeto e o que cada método faz.
-
 \chapter{Desenvolvimento do portal}
 Esta seção irá descrever todo o processo de desenvolvimento do portal facilitador de acesso a dados governamentais públicos. A linguagem utilizada para implementação 
 da aplicação é o Python.
@@ -1233,51 +1230,61 @@ problemas com a edição de um mesmo projeto.
 O repositório criado foi chamado de 'eaicongresso' e está disponível para acesso através do endereço https://github.com/kerollaine/eaicongresso.
 
 \section{O banco de dados}
+Algumas regras de negócio foram implementadas dentro da aplicação de banco de dados utilizando procedimentos armazenados, que são conjuntos
+de instruções SQL que podem conter parâmetros de entrada e/ou saída e não retornam resultados, ao contrário de funções que 
+obrigatoriamente tem um retorno declarado. Para as funções foi utilizado o PL/pgSQL, que é uma linguagem procedural para o banco de 
+dados PostgreSQL que pode ser usado para criar funções e \emph{triggers}, adicionar estruturas de controle para a 
+linguagem SQL, fazer cálculos complexos, herdar tipos de dados definidos pelos usuários, funções e operadores. A escolha de um sistema 
+gerenciador de banco de dados eficiente foi vital para que o processo de importação dos dados para o portal ocorresse com boa performance. 
+
 O sistema gerenciador de banco de dados escolhido foi o PostgreSQL, instalado através do gerenciador de pacotes do sistema operacional denominado Ubuntu 14.04.
 O \emph{script} de criação das tabelas da base de dados do portal foi implementado utilizando um editor de arquivos chamado Sublime e os testes foram realizados em um serviço
 de execução de \emph{scripts online} chamado SQLFiddle. Outro teste realizado antes de persistir as alterações no banco de dados foi a execução do \emph{script} através utilização das cláusulas \emph{begin} e \emph{rollback}, o qual reverte as alterações ao estado inicial antes da transação. Para 
-a aplicação foi criado um usuário para acesso e um banco de dados chamado 'eaicongresso'.
+a aplicação foi criado um usuário para acesso e um banco de dados chamado 'eaicongresso'. 
 
-Algumas regras de negócio foram implementadas dentro da aplicação de banco de dados utilizando procedimentos armazenados que são conjuntos
-de instruções SQL que podem conter parâmetros de entrada e/ou saída e não retornam resultados, ao contrário de funções que 
-obrigatoriamente tem um retorno declarado. Para as funções foi utilizado o O PL/pgSQL, que é uma linguagem procedural para o banco de 
-dados PostgreSQL que pode ser usado para criar funções e \emph{triggers}, adicionar estruturas de controle para a 
-linguagem SQL, fazer cálculos complexos, herdar tipos de dados definidos pelos usuários, funções e operadores.
+O projeto é composto por três funções. A função denominada 'importar\_tramitacao' recebe como parâmetros um \emph{id} 
+de proposição e uma data, e tem como objetivo inserir os dados obtidos da consulta ao método 'listarProposicoesTramitadasNoPeriodo'
+do \emph{web service} na base de dados da aplicação, pois assim será possível importar as proposições. A função 'atualiza\_status\_proposicao' 
+busca a proposição cadastrada e altera o campo 'desatualizada' para valor verdadeiro. Assim, sempre
+que houver alterações a aplicação saberá quais registros foram alterados e efetuar a correção.
 
-
-\section{SOAP}
-SOAP significa Protocolo Simples de Acesso a Objetos, é um protocolo de comunicação baseado em XML que permite a comunicação de mensagens entre aplicações via HTTP, normalmente utilizado em WebServices.
+Já a função 'obter\_proposicao' recebe como parâmetros todos os dados para popular as tabelas do item referenciado, buscando sempre
+se o valor já existe no banco de dados do portal e caso negativo, inserindo o novo registro. Para que não ocorra inconsistências, 
+todos os valores de determinada proposição em tabelas do tipo \emph{many too many} são deletados antes de uma atualização ou nova 
+inserção sobre a proposição em questão. Em casos como o tema, foi necessário trabalhar com listas compostas de outras listas para que 
+o conteúdo fosse obtido.
 
 \section{Consumindo o \emph{web service}}
 Para consumir os dados disponibilizados foram pesquisadas várias bibliotecas em Python para utilizar o SOAP, mas a única disponível
 e atualizada recentemente é a PySimpleSOAP. Entretanto ao acessar o \emph{web service} da câmara dos deputados,a mensagem de retorno 'Nossos sistemas automáticos de segurança impediram que a operação fosse concluída.
-Isso pode ocorrer quando você copia dados de outros sites e eles vêm com conteúdos não permitidos.' é exibida. A central de atendimento da câmara dos deputados informou que estão
+Isso pode ocorrer quando você copia dados de outros sites e eles vêm com conteúdos não permitidos.' é exibida. A central de atendimento do serviço informou que estão
 cientes do problema de instabilidade do serviço e que não tem um prazo final para a resolução do problema. Há várias \emph{issues} cadastradas 
 no repositório de dados abertos relatando problemas de indisponibilidade de serviços mas nenhuma solução foi encontrada.
 
-Logo, foi necessário alterar a forma de importar os dados necessários para requisições HTTP diretas, utilizando a biblioteca 'requests' do Python onde o resultado é um retorno em formato XML. Para traduzir
-o retorno em um objeto em Python foi utilizada a biblioteca ElementTree.
+Logo, foi necessário alterar a forma de importar os dados necessários para requisições via protocolo HTTP diretas, utilizando a biblioteca 'requests' do Python onde o resultado é um retorno no formato \emph{string}. Para traduzir
+o retorno para XML foi utilizada uma biblioteca chamada ElementTree. Assim, é possível percorrer o arquivo identificando as tags e 
+separando as variáveis para o processamento dos dados através da aplicação do portal.
 
 \section{A rotina de importação}
-Durante o desenvolvimento desta rotina de importação dos dados disponibilizados para a aplicação foi verificada 
-uma diferença entre a documentação encontrada e a realidade. Como exemplo pode-se citar o 'OrgaoNumerador' e 'Orgao' que são a mesma
+Durante o desenvolvimento da rotina de importação dos dados disponibilizados para a aplicação foi verificada 
+uma diferença entre a documentação encontrada e os dados recebidos. Como exemplo pode-se citar o 'OrgaoNumerador' e 'Orgao' que são a mesma
 tabela e informações. Logo, a tabela 'Orgao' inicialmente prevista no projeto do portal foi excluída, mantendo apenas a outra. A 
-coluna 'idOrgao' da tabela 'Situacao' também foi excluída pois não há sentido dentro do contexto da tabela.
+coluna 'idOrgao' da tabela 'situacao' também foi excluída pois não há sentido dentro do contexto da tabela.
 
-Outros problemas foram encontrados durante a importação, como extrações sem código identificador ou registros duplicados, que seriam
+Outros problemas foram encontrados durante a importação como extrações sem código identificador ou registros duplicados, que seriam
 utilizados como chave primária dentro de seu escopo. Problemas como estes tornam impossível a utilização
 de vários métodos disponibilizados, sendo necessário extrair a maioria dos dados do método 'ListarProposicoes' para popular 
 as tabelas da aplicação em desenvolvimento.
 
 Para obter uma amostra da quantidade de proposições que serão tratadas por ano, foi implementado um contador de proposições. 
-Para isso, inicialmente faz-se a requisição para o método 'ListarSiglasTipoProposição' onde será formado um conjunto de siglas, 
-pois para acessar o ListarProposicoes é necessário no mínimo enviar os parâmetros de sigla e ano.
+Para isso, inicialmente fez-se a requisição para o método 'ListarSiglasTipoProposição' onde será formado um conjunto de siglas
+para acessar o 'ListarProposicoes', onde os parâmetros mínimos de sigla e ano são obrigatórios.
 
 Após, como teste, foi realizada a requisição para o método 'ListarProposicoes' enviando as siglas para o ano de 2015 e contando
-todas as proposições encontradas no retorno XML.Em 2014 foram encontradas 14468 proposições. Analisando os dados adquiridos durante a 
+todas as proposições encontradas no retorno XML. Em 2014 foram encontradas 14468 proposições. Analisando os dados adquiridos durante a 
 amostra observou-se que nem todas as informações necessárias para o portal estão no retorno do método 'ListarProposicoes' e que para 
 isso seria necessário chamar o método 'ObterProposicaoPorID', pois contém campos como o 'indexacao' e o 'tema' que são 
-extremamente importantes para várias análises que o portal fará sobre os dados. Fazer duas chamadas custaria bem mais
+extremamente importantes para várias análises que o portal fará sobre os dados. Como premissa, duas chamadas custa mais 
 que uma chamada ao serviço externo através da internet. 
 
 Outra divergência encontrada foi que apesar da existência de um método para listar o tipo de autor em nenhum 
@@ -1292,15 +1299,49 @@ o 'idOrgao' retornado em um conjunto de situações. Em nenhum diretório foi en
 relação de cada dado com o conjunto extraído, sendo necessário tempo extra para implementação e execução de testes para entender 
 o cenário a ser trabalhado, contexto e escopo das informações.
 
-Sendo assim, muitas tabelas mudaram sua representação na aplicação apenas para colunas do tipo \emph{string} da proposição,
-já que terão que ser alteradas sermpre que houver nova tramitação e não temos um \emph{web service} para atualizar a tabela como um 
-todo diretamente. Para o auto incremento dos identificadores dos registros no banco de dados foi necessário alterar todas as colunas denominadas 'id' 
-de tipo \emph{integer} para \emph{serial}. A maioria dos procedimentos inseridos no banco de dados consistiu em comparar determinado dado em texto, tratá-lo
-para tirar os espaços e vírgulas ou ponto e vírgula, verificar se existe no banco de dados e retornar o \emph{id} ou caso negativo 
+Sendo assim, muitas tabelas mudaram a sua representação na aplicação apenas para colunas do tipo \emph{string} da proposição
+já que terão que ser alteradas sempre que houver uma nova tramitação e não tem-se um \emph{web service} para atualizar a tabela como um 
+todo diretamente. O processo de importação dos dados é demorado e pesado. Para o auto incremento dos identificadores dos registros
+no banco de dados foi necessário alterar todas as colunas denominadas 'id' 
+de tipo \emph{integer} para \emph{serial}. A maioria dos procedimentos inseridos em funções do banco de dados consiste em comparar determinado dado em texto, tratá-lo
+para tirar os espaços e vírgulas ou ponto e vírgula, verificar se o registro já existe no banco de dados e retornar o \emph{id} ou caso negativo 
 vincular um novo \emph{id} e fazer uma nova inserção.
 
+Este tratamento é realizado através da utilização de expressões regulares, que foi muito utilizada no projeto e consiste em uma 
+notação para representar padrões em \emph{strings}, ou seja, um conjunto de símbolos que formam uma expressão que será interpretada
+como uma regra para, por exemplo, filtrar determinada frase e retirar vírgulas e pontos.
 
+A rotina de importação consiste em obter as proposições que foram marcadas como desatualizadas durante a importação de todas as 
+tramitações no período selecionado, e depois iniciar uma rotina para fazer várias requisições ao servidor da câmara dos deputados 
+para obter detalhes de cada proposição, buscando por \emph{id}. Como o resultado dos métodos diferem entre si, este foi o único 
+meio de obter informações para indexar as proposições posteriormente, como por exemplo o tema.
 
+Entretanto, no início dos testes foi identificada uma longa demora entre a resposta de uma requisição e outra com tempo superior à 
+5 segundos em alguns períodos, evidenciando um gargalo do lado do servidor do \emph{web service} e tornando inviável processar mais 
+de 117000 requisições com esta performance. 
+
+Para resolver este problema utilizou-se o conceito de \emph{threads}. \emph{Threads} são processos leves que contém contador de programa, conjunto
+de registradores e uma pilha de execução. São estruturas de execução pertencentes a um processo e assim compartilham os segmentos de
+código e dados e os recursos alocados ao sistema operacional pelo processo. \emph{Threads} podem ser executadas paralelamente dentro do
+contexto da aplicação, cada uma executando o seu processo de maneira independente. São definidos quatro estados de execução para 
+uma {\emph{thread}, que são eles: (1) novo, quando uma área de memória é alocada para ela; (2) executável, quando for escalonada para
+execução; (3) bloqueado, quando for desativada com algum método como o \emph{sleep} e (4) encerrado, quando a execução for finalizada.
+
+Para cada execução do laço de repetição criado na rotina de importação, foram criadas sete \emph{threads}, cada uma buscando dez
+registros para obter proposição. Após o \emph{start}, foi dado a cada processo um \emph{sleep} de 1 segundo. Após, todas as
+\emph{threads} foram inseridas em uma lista e agrupadas com o processo principal, através do comando \emph{join}.
+
+Ainda assim foi necessário limitar o número de \emph{threads} para cada requisição, pois com um valor superior o servidor 
+retornou mensagens notificando que o número máximo de requisições foi excedido. Também foi necessário colocar todas as threads 
+para dormir, criando um atraso, com a finalidade de diminuir a incidência do mesmo erro ao invés do retorno esperado. 
+
+Utilizando esta solução foram importadas em média 50 proposições por minuto. Como eram 117756 proposições iniciais, foram necessárias 
+aproximadamente 39 horas para fazer a importação inicial. Foram importadas todas as proposições que foram tramitadas de 2010 até 2015. Para 
+cada transação um \emph{commit} foi efetuado, que significa finalizá-la e persistir as alterações no sistema gerenciador de banco de dados.
+Com o objetivo de identificar todas as falhas durante a importação, todas as etapas da execução foram registradas em um arquivo de \emph{log}, denominado
+'rotina\_importacao.log'. Para isso, foi utilizada a biblioteca \emph{'logging'} do Python.
+
+\section{A rotina de indexação}
 
 
 % ---
