@@ -3,6 +3,19 @@
 <head>
     <link class="include" rel="stylesheet" type="text/css"
           href="/static/jquery.jqplot.min.css" />
+    <link class="include" rel="stylesheet" type="text/css"
+          href="/static/bootstrap-ellipsis.css" />
+
+    <style type="text/css">
+        .popover {
+            max-width: 600px !important;
+            width: 600px !important;
+        }
+        a.ellipsis {
+            cursor: pointer;
+        }
+    </style>
+
     {% extends "bootstrap/base.html" %}
     {% block title %}Página inicial | eaicongresso{% endblock %}
     {% block head %}
@@ -19,11 +32,12 @@
 
     <!--[if lt IE 9]><script language="javascript" type="text/javascript"
                              src="/static/excanvas.js"></script><![endif]-->
-    <script class="include" type="text/javascript"
-            src="/static/jquery.min.js"></script>
+    <!--script type="text/javascript" src="/static/jquery.min.js"></script-->
+    <script type="text/javascript" src="/static/bootstrap-ellipsis.js"></script>
 
     <script class="code" type="text/javascript">
         $(document).ready(function(){
+            $('.texto-ellipsado').ellipsis({maxLine: 5, trigger:'mouseenter'});
             $.getJSON('/_get_mes',function (mes) {
                 plot1 = $.jqplot ('chart1', [mes.output], {
                     title: 'Proposições tramitadas por mês durante um ano',

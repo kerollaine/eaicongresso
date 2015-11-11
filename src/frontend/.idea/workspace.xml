@@ -14,8 +14,8 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/frontend$frontend.coverage" NAME="frontend Coverage Results" MODIFIED="1447101967304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/frontend$Unittests_in_Teste.coverage" NAME="Unittests in Teste Coverage Results" MODIFIED="1446735085187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/frontend$frontend.coverage" NAME="frontend Coverage Results" MODIFIED="1447196670655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -32,20 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="frontend.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="frontend.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67153287">
-              <caret line="144" column="35" selection-start-line="144" selection-start-column="35" selection-end-line="144" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
               <folding>
-                <element signature="e#42#51#0" expanded="true" />
-                <marker date="1447102129000" expanded="true" signature="1145:1186" placeholder="SELECT id FR..palavra..." />
-                <marker date="1447102129000" expanded="true" signature="1447:1739" placeholder="SELECT id, e..proposicao..." />
-                <marker date="1447102129000" expanded="true" signature="2162:2507" placeholder="SELECT maior..descricao..." />
-                <marker date="1447102129000" expanded="true" signature="2162:2863" placeholder="SELECT maior..." />
-                <marker date="1447102129000" expanded="true" signature="2227:2489" placeholder="SELECT t.des..tema..." />
-                <marker date="1447102129000" expanded="true" signature="2532:2570" placeholder="SELECT 'Outr..." />
-                <marker date="1447102129000" expanded="true" signature="3190:3384" placeholder="SELECT EXTRA..proposicao..." />
+                <element signature="e#42#55#0" expanded="true" />
+                <marker date="1447196721000" expanded="true" signature="1177:1218" placeholder="SELECT id FR..palavra..." />
+                <marker date="1447196721000" expanded="true" signature="1479:1790" placeholder="SELECT nome,..proposicao..." />
+                <marker date="1447196721000" expanded="true" signature="1550:1790" placeholder="SELECT id, e..proposicao..." />
+                <marker date="1447196721000" expanded="true" signature="2213:2558" placeholder="SELECT maior..descricao..." />
+                <marker date="1447196721000" expanded="true" signature="2213:2914" placeholder="SELECT maior..." />
+                <marker date="1447196721000" expanded="true" signature="2278:2540" placeholder="SELECT t.des..tema..." />
+                <marker date="1447196721000" expanded="true" signature="2583:2621" placeholder="SELECT 'Outr..." />
+                <marker date="1447196721000" expanded="true" signature="3241:3435" placeholder="SELECT EXTRA..proposicao..." />
               </folding>
             </state>
           </provider>
@@ -54,8 +55,8 @@
       <file leaf-file-name="indexacao.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/indexacao.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -66,11 +67,36 @@
       <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-38.125">
-              <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="91" column="51" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1447089831000" expanded="true" signature="619:683" placeholder="..." />
+                <marker date="1447195713000" expanded="true" signature="939:1003" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap-ellipsis.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/bootstrap-ellipsis.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+              <folding>
+                <marker date="1447194845000" expanded="true" signature="3703:3735" placeholder="..." />
+                <marker date="1447194845000" expanded="true" signature="5266:5298" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temas.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/temas.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.28061223">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,11 +120,12 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/_get_data" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/temas.html" />
         <option value="$PROJECT_DIR$/templates/mes.html" />
+        <option value="$PROJECT_DIR$/static/bootstrap-ellipsis.js" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/templates/indexacao.html" />
         <option value="$PROJECT_DIR$/frontend.py" />
+        <option value="$PROJECT_DIR$/templates/temas.html" />
       </list>
     </option>
   </component>
@@ -138,7 +165,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -187,7 +214,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -468,22 +495,22 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32964426" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24980237" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2577075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26166007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31308413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31308413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -500,11 +527,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2577075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2577075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31308413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32866043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -526,16 +553,244 @@
     <entry file="file://$PROJECT_DIR$/frontend.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
+          <folding>
+            <element signature="e#42#55#0" expanded="true" />
+            <marker date="1447196721000" expanded="true" signature="1177:1218" placeholder="SELECT id FR..palavra..." />
+            <marker date="1447196721000" expanded="true" signature="1479:1790" placeholder="SELECT nome,..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="1550:1790" placeholder="SELECT id, e..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2558" placeholder="SELECT maior..descricao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2914" placeholder="SELECT maior..." />
+            <marker date="1447196721000" expanded="true" signature="2278:2540" placeholder="SELECT t.des..tema..." />
+            <marker date="1447196721000" expanded="true" signature="2583:2621" placeholder="SELECT 'Outr..." />
+            <marker date="1447196721000" expanded="true" signature="3241:3435" placeholder="SELECT EXTRA..proposicao..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/indexacao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="51" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1447195713000" expanded="true" signature="939:1003" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrap-ellipsis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding>
+            <marker date="1447194845000" expanded="true" signature="3703:3735" placeholder="..." />
+            <marker date="1447194845000" expanded="true" signature="5266:5298" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/temas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#42#51#0" expanded="true" />
-            <marker date="1447102129000" expanded="true" signature="1145:1186" placeholder="SELECT id FR..palavra..." />
-            <marker date="1447102129000" expanded="true" signature="1447:1739" placeholder="SELECT id, e..proposicao..." />
-            <marker date="1447102129000" expanded="true" signature="2162:2507" placeholder="SELECT maior..descricao..." />
-            <marker date="1447102129000" expanded="true" signature="2162:2863" placeholder="SELECT maior..." />
-            <marker date="1447102129000" expanded="true" signature="2227:2489" placeholder="SELECT t.des..tema..." />
-            <marker date="1447102129000" expanded="true" signature="2532:2570" placeholder="SELECT 'Outr..." />
-            <marker date="1447102129000" expanded="true" signature="3190:3384" placeholder="SELECT EXTRA..proposicao..." />
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#55#0" expanded="true" />
+            <marker date="1447196721000" expanded="true" signature="1177:1218" placeholder="SELECT id FR..palavra..." />
+            <marker date="1447196721000" expanded="true" signature="1479:1790" placeholder="SELECT nome,..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="1550:1790" placeholder="SELECT id, e..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2558" placeholder="SELECT maior..descricao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2914" placeholder="SELECT maior..." />
+            <marker date="1447196721000" expanded="true" signature="2278:2540" placeholder="SELECT t.des..tema..." />
+            <marker date="1447196721000" expanded="true" signature="2583:2621" placeholder="SELECT 'Outr..." />
+            <marker date="1447196721000" expanded="true" signature="3241:3435" placeholder="SELECT EXTRA..proposicao..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/indexacao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1447195713000" expanded="true" signature="939:1003" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrap-ellipsis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding>
+            <marker date="1447194845000" expanded="true" signature="3703:3735" placeholder="..." />
+            <marker date="1447194845000" expanded="true" signature="5266:5298" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="38" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <folding>
+            <element signature="e#42#55#0" expanded="true" />
+            <marker date="1447196721000" expanded="true" signature="1177:1218" placeholder="SELECT id FR..palavra..." />
+            <marker date="1447196721000" expanded="true" signature="1479:1790" placeholder="SELECT nome,..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="1550:1790" placeholder="SELECT id, e..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2558" placeholder="SELECT maior..descricao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2914" placeholder="SELECT maior..." />
+            <marker date="1447196721000" expanded="true" signature="2278:2540" placeholder="SELECT t.des..tema..." />
+            <marker date="1447196721000" expanded="true" signature="2583:2621" placeholder="SELECT 'Outr..." />
+            <marker date="1447196721000" expanded="true" signature="3241:3435" placeholder="SELECT EXTRA..proposicao..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/indexacao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1447195713000" expanded="true" signature="939:1003" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#55#0" expanded="true" />
+            <marker date="1447196721000" expanded="true" signature="1177:1218" placeholder="SELECT id FR..palavra..." />
+            <marker date="1447196721000" expanded="true" signature="1479:1790" placeholder="SELECT nome,..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="1550:1790" placeholder="SELECT id, e..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2558" placeholder="SELECT maior..descricao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2914" placeholder="SELECT maior..." />
+            <marker date="1447196721000" expanded="true" signature="2278:2540" placeholder="SELECT t.des..tema..." />
+            <marker date="1447196721000" expanded="true" signature="2583:2621" placeholder="SELECT 'Outr..." />
+            <marker date="1447196721000" expanded="true" signature="3241:3435" placeholder="SELECT EXTRA..proposicao..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/indexacao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="82" selection-start-line="23" selection-start-column="82" selection-end-line="23" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1447195713000" expanded="true" signature="939:1003" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="e#42#55#0" expanded="true" />
+            <marker date="1447196721000" expanded="true" signature="1177:1218" placeholder="SELECT id FR..palavra..." />
+            <marker date="1447196721000" expanded="true" signature="1479:1790" placeholder="SELECT nome,..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="1550:1790" placeholder="SELECT id, e..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2558" placeholder="SELECT maior..descricao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2914" placeholder="SELECT maior..." />
+            <marker date="1447196721000" expanded="true" signature="2278:2540" placeholder="SELECT t.des..tema..." />
+            <marker date="1447196721000" expanded="true" signature="2583:2621" placeholder="SELECT 'Outr..." />
+            <marker date="1447196721000" expanded="true" signature="3241:3435" placeholder="SELECT EXTRA..proposicao..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/indexacao.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1447195713000" expanded="true" signature="939:1003" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#55#0" expanded="true" />
+            <marker date="1447196721000" expanded="true" signature="1177:1218" placeholder="SELECT id FR..palavra..." />
+            <marker date="1447196721000" expanded="true" signature="1479:1790" placeholder="SELECT nome,..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="1550:1790" placeholder="SELECT id, e..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2558" placeholder="SELECT maior..descricao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2914" placeholder="SELECT maior..." />
+            <marker date="1447196721000" expanded="true" signature="2278:2540" placeholder="SELECT t.des..tema..." />
+            <marker date="1447196721000" expanded="true" signature="2583:2621" placeholder="SELECT 'Outr..." />
+            <marker date="1447196721000" expanded="true" signature="3241:3435" placeholder="SELECT EXTRA..proposicao..." />
           </folding>
         </state>
       </provider>
@@ -554,13 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/temas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4376658">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/bubble.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -570,7 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3580902">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -578,44 +825,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+    <entry file="file://$PROJECT_DIR$/frontend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-38.125">
-          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1447089831000" expanded="true" signature="619:683" placeholder="..." />
+            <element signature="e#42#55#0" expanded="true" />
+            <marker date="1447196721000" expanded="true" signature="1177:1218" placeholder="SELECT id FR..palavra..." />
+            <marker date="1447196721000" expanded="true" signature="1479:1790" placeholder="SELECT nome,..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="1550:1790" placeholder="SELECT id, e..proposicao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2558" placeholder="SELECT maior..descricao..." />
+            <marker date="1447196721000" expanded="true" signature="2213:2914" placeholder="SELECT maior..." />
+            <marker date="1447196721000" expanded="true" signature="2278:2540" placeholder="SELECT t.des..tema..." />
+            <marker date="1447196721000" expanded="true" signature="2583:2621" placeholder="SELECT 'Outr..." />
+            <marker date="1447196721000" expanded="true" signature="3241:3435" placeholder="SELECT EXTRA..proposicao..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrap-ellipsis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="10" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding>
+            <marker date="1447194845000" expanded="true" signature="3703:3735" placeholder="..." />
+            <marker date="1447194845000" expanded="true" signature="5266:5298" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/indexacao.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend.py">
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67153287">
-          <caret line="144" column="35" selection-start-line="144" selection-start-column="35" selection-end-line="144" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="51" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
           <folding>
-            <element signature="e#42#51#0" expanded="true" />
-            <marker date="1447102129000" expanded="true" signature="1145:1186" placeholder="SELECT id FR..palavra..." />
-            <marker date="1447102129000" expanded="true" signature="1447:1739" placeholder="SELECT id, e..proposicao..." />
-            <marker date="1447102129000" expanded="true" signature="2162:2507" placeholder="SELECT maior..descricao..." />
-            <marker date="1447102129000" expanded="true" signature="2162:2863" placeholder="SELECT maior..." />
-            <marker date="1447102129000" expanded="true" signature="2227:2489" placeholder="SELECT t.des..tema..." />
-            <marker date="1447102129000" expanded="true" signature="2532:2570" placeholder="SELECT 'Outr..." />
-            <marker date="1447102129000" expanded="true" signature="3190:3384" placeholder="SELECT EXTRA..proposicao..." />
+            <element signature="n#style#0;n#div#0;n#head#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1447195713000" expanded="true" signature="939:1003" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/temas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28061223">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

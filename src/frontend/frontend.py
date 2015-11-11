@@ -1,6 +1,7 @@
 # coding=utf-8
 __author__ = 'kerollaine'
 
+import string
 import re
 import nltk
 from nltk.corpus import stopwords
@@ -12,9 +13,7 @@ from flask_bootstrap import Bootstrap
 app = Flask(__name__)
 Bootstrap(app)
 
-
 def processa_palavras(caracteres, cursor):
-
 
     stopwords_sem_acentuacao = [normalize('NFKD', palavra).encode('ASCII','ignore') for palavra in stopwords.words('portuguese')]
     conjunto_caracteres_a_substituir = '[\\!\\"\\#\\$\\%\\&\\\\\'\\(\\)\\*\\+\\,\\-\\.\\/\\:\\;\\<\\=\\>\\?\\@\\[\\]\\^\\_\\`\\{\\|\\}\\~\\º\\ª]'
@@ -28,6 +27,7 @@ def processa_palavras(caracteres, cursor):
     palavras = [palavra for palavra in palavras if len(palavra) > 2]
 
     ids_palavras = []
+    resultados = []
 
     for palavra in palavras:
         sql = 'SELECT id FROM palavra where descricao = %(palavra)s'
@@ -40,10 +40,10 @@ def processa_palavras(caracteres, cursor):
             ids_palavras.append(tupla_retorno[0])
 
     if len(ids_palavras):
-        sql = """SELECT id, ementa, link_teor, count(*) AS ranking
+        sql = """SELECT nome, ementa, link_teor, data_apresentacao, count(*) AS ranking
                 FROM proposicao
                     JOIN palavra_proposicao on id = id_proposicao
-                WHERE id_palavra IN (%(ids_palavra)s)
+                WHERE id_palavra IN %(ids_palavra)s
                 GROUP BY id
                 ORDER BY ranking DESC
                 LIMIT 50
@@ -129,6 +129,7 @@ def proposicaopormes():
 
 @app.route('/indexacao', methods=['GET'])
 def indexacao():
+
     try:
         con = psycopg2.connect(host='localhost', user='eaicongresso', password='eai2015cong', dbname='eaicongresso')
         c = con.cursor()
@@ -139,19 +140,14 @@ def indexacao():
     if 'palavras' in request.args:
         palavras = request.args['palavras']
         resultados = processa_palavras(palavras, c)
-        for resultado in resultados:
-            id = resultado[0]
-            ementa = resultado[1]
-            link_teor = resultado[2]
-            print(id,ementa)
 
     else:
         palavras = None
+        resultados = None
 
-    return render_template('indexacao.html', palavras=palavras)
-
+    return render_template('indexacao.html', palavras=palavras, resultados=resultados)
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
 
